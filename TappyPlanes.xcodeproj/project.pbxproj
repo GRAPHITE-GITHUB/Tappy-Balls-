@@ -176,6 +176,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AF63CA318FAA21B00D3D9D3 /* balls */ = {
+			isa = PBXGroup;
+			children = (
+				4AF63C8518FAA13A00D3D9D3 /* ball_bronze.png */,
+				4AF63C8618FAA13A00D3D9D3 /* ball_crystal.png */,
+				4AF63C8718FAA13A00D3D9D3 /* ball_gold.png */,
+				4AF63C8818FAA13A00D3D9D3 /* ball_prize.png */,
+				4AF63C8918FAA13A00D3D9D3 /* ball_rainbow.png */,
+				4AF63C8A18FAA13A00D3D9D3 /* ball_rock.png */,
+				4AF63C8B18FAA13A00D3D9D3 /* ball_silver.png */,
+				4AF63C6D18FA978300D3D9D3 /* ball_blue_s.png */,
+				4AF63C6E18FA978300D3D9D3 /* ball_green_s.png */,
+				4AF63C6F18FA978300D3D9D3 /* ball_orange_s.png */,
+				4AF63C7018FA978300D3D9D3 /* ball_purple_s.png */,
+				4AF63C7118FA978300D3D9D3 /* ball_red_s.png */,
+				4AF63C7218FA978300D3D9D3 /* ball_yellow_s.png */,
+				4AF63C7918FA978F00D3D9D3 /* ball_blue.png */,
+				4AF63C7A18FA978F00D3D9D3 /* ball_green.png */,
+				4AF63C7B18FA978F00D3D9D3 /* ball_orange.png */,
+				4AF63C7C18FA978F00D3D9D3 /* ball_purple.png */,
+				4AF63C7D18FA978F00D3D9D3 /* ball_red.png */,
+				4AF63C9318FAA15F00D3D9D3 /* ball_bronze_s.png */,
+				4AF63C9418FAA15F00D3D9D3 /* ball_crystal_s.png */,
+				4AF63C9518FAA15F00D3D9D3 /* ball_gold_s.png */,
+				4AF63C9618FAA15F00D3D9D3 /* ball_platinum_s.png */,
+				4AF63C9718FAA15F00D3D9D3 /* ball_prize_s.png */,
+				4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */,
+				4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */,
+				4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */,
+				4AF63C7E18FA978F00D3D9D3 /* ball_yellow.png */,
+			);
+			name = balls;
+			sourceTree = "<group>";
+		};
 		63C5F3F718C9BCBB00F2C2FF = {
 			isa = PBXGroup;
 			children = (
@@ -243,38 +277,12 @@
 		63C5F40C18C9BCBB00F2C2FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4AF63C7918FA978F00D3D9D3 /* ball_blue.png */,
-				4AF63C7A18FA978F00D3D9D3 /* ball_green.png */,
-				4AF63C7B18FA978F00D3D9D3 /* ball_orange.png */,
-				4AF63C7C18FA978F00D3D9D3 /* ball_purple.png */,
-				4AF63C7D18FA978F00D3D9D3 /* ball_red.png */,
-				4AF63C9318FAA15F00D3D9D3 /* ball_bronze_s.png */,
-				4AF63C9418FAA15F00D3D9D3 /* ball_crystal_s.png */,
-				4AF63C9518FAA15F00D3D9D3 /* ball_gold_s.png */,
-				4AF63C9618FAA15F00D3D9D3 /* ball_platinum_s.png */,
-				4AF63C9718FAA15F00D3D9D3 /* ball_prize_s.png */,
-				4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */,
-				4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */,
-				4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */,
-				4AF63C7E18FA978F00D3D9D3 /* ball_yellow.png */,
+				4AF63C6B18FA691300D3D9D3 /* balls.plist */,
+				4AF63CA318FAA21B00D3D9D3 /* balls */,
 				63C5F40D18C9BCBB00F2C2FF /* TappyPlanes-Info.plist */,
-				4AF63C8518FAA13A00D3D9D3 /* ball_bronze.png */,
-				4AF63C8618FAA13A00D3D9D3 /* ball_crystal.png */,
-				4AF63C8718FAA13A00D3D9D3 /* ball_gold.png */,
-				4AF63C8818FAA13A00D3D9D3 /* ball_prize.png */,
-				4AF63C8918FAA13A00D3D9D3 /* ball_rainbow.png */,
-				4AF63C8A18FAA13A00D3D9D3 /* ball_rock.png */,
-				4AF63C8B18FAA13A00D3D9D3 /* ball_silver.png */,
-				4AF63C6D18FA978300D3D9D3 /* ball_blue_s.png */,
-				4AF63C6E18FA978300D3D9D3 /* ball_green_s.png */,
-				4AF63C6F18FA978300D3D9D3 /* ball_orange_s.png */,
-				4AF63C7018FA978300D3D9D3 /* ball_purple_s.png */,
-				4AF63C7118FA978300D3D9D3 /* ball_red_s.png */,
-				4AF63C7218FA978300D3D9D3 /* ball_yellow_s.png */,
 				63C5F40E18C9BCBB00F2C2FF /* InfoPlist.strings */,
 				63C5F41118C9BCBB00F2C2FF /* main.m */,
 				63C5F41318C9BCBB00F2C2FF /* TappyPlanes-Prefix.pch */,
-				4AF63C6B18FA691300D3D9D3 /* balls.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
