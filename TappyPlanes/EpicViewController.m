@@ -28,7 +28,7 @@
     
     NSString *score = [defaults objectForKey:@"score"];
 
-    if([scoreLabel.text  isEqual: @"25"]) {
+    if([scoreLabel.text  isEqualToString:@"25"] || [scoreLabel.text  isEqualToString:@"26"] || [scoreLabel.text  isEqualToString:@"27"] || [scoreLabel.text  isEqualToString:@"28"] || [scoreLabel.text  isEqualToString:@"29"]) {
         
         NSString *ball =@"blue";
         
@@ -39,62 +39,14 @@
         [defaults synchronize];
     }
     
-    if([scoreLabel.text  isEqual: @"26"]) {
-        
-        NSString *ball =@"blue";
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        [defaults setObject:ball forKey:@"ball"];
-        
-        [defaults synchronize];
-    }
+   else {
     
-    if([scoreLabel.text  isEqual: @"27"]) {
-        
-        NSString *ball =@"blue";
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        [defaults setObject:ball forKey:@"ball"];
-        
-        [defaults synchronize];
-    }
-    
-    if([scoreLabel.text  isEqual: @"28"]) {
-        
-        NSString *ball =@"blue";
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        [defaults setObject:ball forKey:@"ball"];
-        
-        [defaults synchronize];
-    }
-    
-    if([scoreLabel.text  isEqual: @"29"]) {
-        
-        NSString *ball =@"blue";
-        
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        
-        [defaults setObject:ball forKey:@"ball"];
-        
-        [defaults synchronize];
-    }
-    
-       else {
-        
-           UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Insufficient XP"
-                                                           message:@"You must have at least 25 XP to unlock the blue ball!"
-                                                          delegate:self
-                                                 cancelButtonTitle:nil
-                                                 otherButtonTitles:@"OK", nil];
-           [alert show];
-          
-        
-        
-        
+       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Insufficient XP"
+                                                       message:@"You must have at least 25 XP to unlock the blue ball!"
+                                                      delegate:self
+                                             cancelButtonTitle:nil
+                                             otherButtonTitles:@"OK", nil];
+       [alert show];
     }
     
 }
