@@ -9,6 +9,7 @@
 #import "MyScene.h"
 #import "Bird.h"
 #import <AVFoundation/AVAudioPlayer.h>
+#import "ViewController.h"
 
 #define kObstacleWidth          55.
 #define kObstacleVertSpace      106.
@@ -51,7 +52,18 @@
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         
         
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        NSString *ball = [defaults objectForKey:@"ball"];
+        
+        if([ball isEqual:@"blue"]){
+            self.bird = [Bird spriteNodeWithImageNamed:@"Resized-IARCY.png"];
+        }else {
+        
         self.bird = [Bird spriteNodeWithImageNamed:@"Resized-U7J6T.png"];
+            
+        }
         self.bird.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.bird.size.width/2];
         self.bird.physicsBody.dynamic = NO;
         self.bird.physicsBody.density = 3.2;
@@ -139,15 +151,19 @@
                 [self restart];
                 
                 NSString *state =@"GAMEOVER";
+                NSString *menu =@"GAME";
                 
                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
                 
                 [defaults setObject:state forKey:@"state"];
+                [defaults setObject:menu forKey:@"menu"];
                 
                 [defaults synchronize];
                 
                 NSLog(@"Data saved");
-
+                
+                
+                
                 
                 break;
             }

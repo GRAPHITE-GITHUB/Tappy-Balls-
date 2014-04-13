@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MyScene.h"
 #import <AVFoundation/AVAudioPlayer.h>
+#import "EpicViewController.h"
 
 @implementation ViewController
 @synthesize bannerIsVisible;
@@ -17,16 +18,30 @@
 @synthesize label3;
 @synthesize currentScore;
 @synthesize totalScore;
+@synthesize gameOver;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [gameOver setHidden:YES];
 
     myTimer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector (showData)userInfo: nil
                                               repeats: YES];
     
-    myTimer = [NSTimer scheduledTimerWithTimeInterval:0.00001 target:self selector:@selector (showActivity)userInfo: nil
+    myTimer2 = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector (showActivity)userInfo: nil
                                               repeats: YES];
+    
+    myTimer3 = [NSTimer scheduledTimerWithTimeInterval:0.8 target:self selector:@selector (game)userInfo: nil
+                                               repeats: YES];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *score = [defaults objectForKey:@"score"];
+    
+    label2.text= score;
+    
+    
    
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = NO;
@@ -51,9 +66,39 @@
         
     }
     else{
-        currentScore = 0;
-        label1.text=0;
+        
+        
     }
+}
+
+-(void)game {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *menu = [defaults objectForKey:@"menu"];
+    
+    
+    if([menu isEqual:@"GAME"]){
+       
+        [gameOver setHidden:NO];
+      
+        NSString *score =label2.text;
+        
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        
+        [defaults setObject:score forKey:@"score"];
+        
+        [defaults synchronize];
+        
+        NSLog(@"Data saved");
+
+
+        
+        
+        currentScore = 0;
+        label1.text=@"0";
+    }
+    
 }
 
 
@@ -64,7 +109,48 @@
     
     label3.text = state;
     
+    
 }
+
+-(IBAction)PlayAgain {
+   
+    NSString *menu =@"AGAIN";
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:menu forKey:@"menu"];
+    
+    [defaults synchronize];
+    
+    [gameOver setHidden:YES];
+    
+    NSLog(@"Data saved");
+
+    
+}
+
+
+-(IBAction)Menu {
+    
+    NSString *menu =@"AGAIN";
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    [defaults setObject:menu forKey:@"menu"];
+    
+    [defaults synchronize];
+    
+    [gameOver setHidden:YES];
+    
+    NSLog(@"Data saved");
+    
+    EpicViewController *EVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MainMenu"];
+    [self presentViewController:EVC animated:YES completion:nil];
+    
+    
+}
+
+
 
 
 

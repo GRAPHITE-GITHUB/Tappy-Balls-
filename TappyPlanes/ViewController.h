@@ -17,11 +17,14 @@
     IBOutlet UILabel *label1;
     IBOutlet UILabel *label2;
     IBOutlet UILabel *label3;
+    IBOutlet UILabel *label4;
     int64_t currentScore;
     int64_t totalScore;
-    
+    IBOutlet UIView *gameOver;
     NSTimer *myTimer;
     NSTimer *myTimer2;
+    NSTimer *myTimer3;
+    
     
 }
 
@@ -32,6 +35,11 @@
 @property (nonatomic, retain)IBOutlet UILabel *label1;
 @property (nonatomic, retain)IBOutlet UILabel *label2;
 @property (nonatomic, retain)IBOutlet UILabel *label3;
+@property (nonatomic, retain)IBOutlet UILabel *label4;
+@property (nonatomic, retain)IBOutlet UIView *gameOver;
 - (void) runTimer;
 - (void) runTimer2;
+- (void) runTimer3;
+
+
 @end

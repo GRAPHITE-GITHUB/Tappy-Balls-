@@ -36,6 +36,8 @@
 		63D5FFBC18F813B900176BBD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D5FFBB18F813B900176BBD /* AVFoundation.framework */; };
 		63D5FFBE18F8141600176BBD /* Go Cart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFBD18F8141600176BBD /* Go Cart.mp3 */; };
 		63D5FFC018F8144E00176BBD /* Go Cart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFBF18F8144E00176BBD /* Go Cart.m4a */; };
+		63D5FFC318FA2DD300176BBD /* EpicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D5FFC218FA2DD300176BBD /* EpicViewController.m */; };
+		63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,9 @@
 		63D5FFBB18F813B900176BBD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		63D5FFBD18F8141600176BBD /* Go Cart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Go Cart.mp3"; sourceTree = "<group>"; };
 		63D5FFBF18F8144E00176BBD /* Go Cart.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Go Cart.m4a"; sourceTree = "<group>"; };
+		63D5FFC118FA2DD300176BBD /* EpicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpicViewController.h; sourceTree = "<group>"; };
+		63D5FFC218FA2DD300176BBD /* EpicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpicViewController.m; sourceTree = "<group>"; };
+		63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resized-IARCY.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,10 +167,13 @@
 				63D5FFB118F80EDC00176BBD /* slide1_balls.png */,
 				63C5F43F18C9BD9000F2C2FF /* Bird.h */,
 				63C5F44018C9BD9000F2C2FF /* Bird.m */,
+				63D5FFC118FA2DD300176BBD /* EpicViewController.h */,
+				63D5FFC218FA2DD300176BBD /* EpicViewController.m */,
 				63C5F42018C9BCBB00F2C2FF /* Spaceship.png */,
 				63C5F44218C9C32000F2C2FF /* Plane.png */,
 				63C5F44418C9C37000F2C2FF /* Plane 2.png */,
 				63D5FFB718F8121A00176BBD /* Resized-U7J6T.png */,
+				63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */,
 				63D5FFB318F8119100176BBD /* redball.png */,
 				63D5FFBF18F8144E00176BBD /* Go Cart.m4a */,
 				63D5FFB518F811AC00176BBD /* Go Cart - Loop Mix.mp3 */,
@@ -281,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */,
 				63C5F41018C9BCBB00F2C2FF /* InfoPlist.strings in Resources */,
 				63C5F42318C9BCBB00F2C2FF /* Images.xcassets in Resources */,
 				63C5F42118C9BCBB00F2C2FF /* Spaceship.png in Resources */,
@@ -312,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63C5F44118C9BD9000F2C2FF /* Bird.m in Sources */,
+				63D5FFC318FA2DD300176BBD /* EpicViewController.m in Sources */,
 				63C5F41F18C9BCBB00F2C2FF /* MyScene.m in Sources */,
 				63C5F41C18C9BCBB00F2C2FF /* ViewController.m in Sources */,
 				63C5F41618C9BCBB00F2C2FF /* AppDelegate.m in Sources */,
