@@ -11,9 +11,9 @@
 		<key>dark</key>
 		<string>00007F</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_blue.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_blue_s.png</string>
 	</dict>
 	<key>green</key>
 	<dict>
@@ -24,9 +24,9 @@
 		<key>dark</key>
 		<string>007F00</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_green.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_green_s.png</string>
 	</dict>
 	<key>red</key>
 	<dict>
@@ -37,9 +37,9 @@
 		<key>dark</key>
 		<string>7F0000</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_red.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_red_s.png</string>
 	</dict>
 	<key>yellow</key>
 	<dict>
@@ -50,9 +50,9 @@
 		<key>dark</key>
 		<string>7F7F00</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_yellow.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_yellow_s.png</string>
 	</dict>
 	<key>orange</key>
 	<dict>
@@ -63,9 +63,9 @@
 		<key>dark</key>
 		<string>7F2200</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_orange.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_orange_s.png</string>
 	</dict>
 	<key>purple</key>
 	<dict>
@@ -76,9 +76,9 @@
 		<key>dark</key>
 		<string>CC00CC</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_purple.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_purple_s.png</string>
 	</dict>
 	<key>bronze</key>
 	<dict>
@@ -89,9 +89,9 @@
 		<key>dark</key>
 		<string>716C63</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_bronze.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_bronze_s.png</string>
 	</dict>
 	<key>silver</key>
 	<dict>
@@ -102,9 +102,9 @@
 		<key>dark</key>
 		<string>A69E9D</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_silver.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_silver_s.png</string>
 	</dict>
 	<key>gold</key>
 	<dict>
@@ -115,9 +115,9 @@
 		<key>dark</key>
 		<string>BF820F</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_gold.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_gold_s.png</string>
 	</dict>
 	<key>rock</key>
 	<dict>
@@ -128,9 +128,9 @@
 		<key>dark</key>
 		<string>313133</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_rock.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_rock_s.png</string>
 	</dict>
 	<key>crystal</key>
 	<dict>
@@ -141,9 +141,9 @@
 		<key>dark</key>
 		<string>162059</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_crystal.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_crystal_s.png</string>
 	</dict>
 	<key>prize</key>
 	<dict>
@@ -154,22 +154,22 @@
 		<key>dark</key>
 		<string>A50003</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_prize.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_prize_s.png</string>
 	</dict>
 	<key>rainbow</key>
 	<dict>
 		<key>base</key>
-		<string></string>
+		<false/>
 		<key>light</key>
-		<string></string>
+		<false/>
 		<key>dark</key>
-		<string></string>
+		<false/>
 		<key>ball</key>
-		<string></string>
+		<string>ball_rainbow.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_rainbow_s.png</string>
 	</dict>
 	<key>platinum</key>
 	<dict>
@@ -180,9 +180,9 @@
 		<key>dark</key>
 		<string>84898C</string>
 		<key>ball</key>
-		<string></string>
+		<string>ball_platinum.png</string>
 		<key>squashed</key>
-		<string></string>
+		<string>ball_platinum_s.png</string>
 	</dict>
 </dict>
 </plist>
