@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AF63C6C18FA691300D3D9D3 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C6B18FA691300D3D9D3 /* Property List.plist */; };
+		4AF63C6C18FA691300D3D9D3 /* balls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C6B18FA691300D3D9D3 /* balls.plist */; };
 		63C5F40418C9BCBB00F2C2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40318C9BCBB00F2C2FF /* Foundation.framework */; };
 		63C5F40618C9BCBB00F2C2FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40518C9BCBB00F2C2FF /* CoreGraphics.framework */; };
 		63C5F40818C9BCBB00F2C2FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40718C9BCBB00F2C2FF /* UIKit.framework */; };
@@ -52,7 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4AF63C6B18FA691300D3D9D3 /* Property List.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		4AF63C6B18FA691300D3D9D3 /* balls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = balls.plist; sourceTree = "<group>"; };
 		63C5F40018C9BCBB00F2C2FF /* TappyPlanes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyPlanes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5F40318C9BCBB00F2C2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63C5F40518C9BCBB00F2C2FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -193,7 +193,7 @@
 				63C5F40E18C9BCBB00F2C2FF /* InfoPlist.strings */,
 				63C5F41118C9BCBB00F2C2FF /* main.m */,
 				63C5F41318C9BCBB00F2C2FF /* TappyPlanes-Prefix.pch */,
-				4AF63C6B18FA691300D3D9D3 /* Property List.plist */,
+				4AF63C6B18FA691300D3D9D3 /* balls.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				63D5FFB218F80EDC00176BBD /* slide1_balls.png in Resources */,
 				63D5FFB418F8119100176BBD /* redball.png in Resources */,
 				63D5FFB818F8121A00176BBD /* Resized-U7J6T.png in Resources */,
-				4AF63C6C18FA691300D3D9D3 /* Property List.plist in Resources */,
+				4AF63C6C18FA691300D3D9D3 /* balls.plist in Resources */,
 				63D5FFBE18F8141600176BBD /* Go Cart.mp3 in Resources */,
 				63D5FFB618F811AC00176BBD /* Go Cart - Loop Mix.mp3 in Resources */,
 				63C5F41918C9BCBB00F2C2FF /* Main.storyboard in Resources */,
