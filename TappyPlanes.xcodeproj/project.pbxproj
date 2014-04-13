@@ -20,6 +20,21 @@
 		4AF63C8218FA978F00D3D9D3 /* ball_purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C7C18FA978F00D3D9D3 /* ball_purple.png */; };
 		4AF63C8318FA978F00D3D9D3 /* ball_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C7D18FA978F00D3D9D3 /* ball_red.png */; };
 		4AF63C8418FA978F00D3D9D3 /* ball_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C7E18FA978F00D3D9D3 /* ball_yellow.png */; };
+		4AF63C8C18FAA13A00D3D9D3 /* ball_bronze.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8518FAA13A00D3D9D3 /* ball_bronze.png */; };
+		4AF63C8D18FAA13A00D3D9D3 /* ball_crystal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8618FAA13A00D3D9D3 /* ball_crystal.png */; };
+		4AF63C8E18FAA13A00D3D9D3 /* ball_gold.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8718FAA13A00D3D9D3 /* ball_gold.png */; };
+		4AF63C8F18FAA13A00D3D9D3 /* ball_prize.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8818FAA13A00D3D9D3 /* ball_prize.png */; };
+		4AF63C9018FAA13A00D3D9D3 /* ball_rainbow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8918FAA13A00D3D9D3 /* ball_rainbow.png */; };
+		4AF63C9118FAA13A00D3D9D3 /* ball_rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8A18FAA13A00D3D9D3 /* ball_rock.png */; };
+		4AF63C9218FAA13A00D3D9D3 /* ball_silver.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C8B18FAA13A00D3D9D3 /* ball_silver.png */; };
+		4AF63C9B18FAA15F00D3D9D3 /* ball_bronze_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9318FAA15F00D3D9D3 /* ball_bronze_s.png */; };
+		4AF63C9C18FAA15F00D3D9D3 /* ball_crystal_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9418FAA15F00D3D9D3 /* ball_crystal_s.png */; };
+		4AF63C9D18FAA15F00D3D9D3 /* ball_gold_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9518FAA15F00D3D9D3 /* ball_gold_s.png */; };
+		4AF63C9E18FAA15F00D3D9D3 /* ball_platinum_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9618FAA15F00D3D9D3 /* ball_platinum_s.png */; };
+		4AF63C9F18FAA15F00D3D9D3 /* ball_prize_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9718FAA15F00D3D9D3 /* ball_prize_s.png */; };
+		4AF63CA018FAA15F00D3D9D3 /* ball_rainbow_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */; };
+		4AF63CA118FAA15F00D3D9D3 /* ball_rock_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */; };
+		4AF63CA218FAA15F00D3D9D3 /* ball_silver_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */; };
 		63C5F40418C9BCBB00F2C2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40318C9BCBB00F2C2FF /* Foundation.framework */; };
 		63C5F40618C9BCBB00F2C2FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40518C9BCBB00F2C2FF /* CoreGraphics.framework */; };
 		63C5F40818C9BCBB00F2C2FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40718C9BCBB00F2C2FF /* UIKit.framework */; };
@@ -77,6 +92,21 @@
 		4AF63C7C18FA978F00D3D9D3 /* ball_purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_purple.png; sourceTree = "<group>"; };
 		4AF63C7D18FA978F00D3D9D3 /* ball_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_red.png; sourceTree = "<group>"; };
 		4AF63C7E18FA978F00D3D9D3 /* ball_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_yellow.png; sourceTree = "<group>"; };
+		4AF63C8518FAA13A00D3D9D3 /* ball_bronze.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_bronze.png; sourceTree = "<group>"; };
+		4AF63C8618FAA13A00D3D9D3 /* ball_crystal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_crystal.png; sourceTree = "<group>"; };
+		4AF63C8718FAA13A00D3D9D3 /* ball_gold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_gold.png; sourceTree = "<group>"; };
+		4AF63C8818FAA13A00D3D9D3 /* ball_prize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_prize.png; sourceTree = "<group>"; };
+		4AF63C8918FAA13A00D3D9D3 /* ball_rainbow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rainbow.png; sourceTree = "<group>"; };
+		4AF63C8A18FAA13A00D3D9D3 /* ball_rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rock.png; sourceTree = "<group>"; };
+		4AF63C8B18FAA13A00D3D9D3 /* ball_silver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_silver.png; sourceTree = "<group>"; };
+		4AF63C9318FAA15F00D3D9D3 /* ball_bronze_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_bronze_s.png; sourceTree = "<group>"; };
+		4AF63C9418FAA15F00D3D9D3 /* ball_crystal_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_crystal_s.png; sourceTree = "<group>"; };
+		4AF63C9518FAA15F00D3D9D3 /* ball_gold_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_gold_s.png; sourceTree = "<group>"; };
+		4AF63C9618FAA15F00D3D9D3 /* ball_platinum_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_platinum_s.png; sourceTree = "<group>"; };
+		4AF63C9718FAA15F00D3D9D3 /* ball_prize_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_prize_s.png; sourceTree = "<group>"; };
+		4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rainbow_s.png; sourceTree = "<group>"; };
+		4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rock_s.png; sourceTree = "<group>"; };
+		4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_silver_s.png; sourceTree = "<group>"; };
 		63C5F40018C9BCBB00F2C2FF /* TappyPlanes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyPlanes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5F40318C9BCBB00F2C2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63C5F40518C9BCBB00F2C2FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -218,8 +248,23 @@
 				4AF63C7B18FA978F00D3D9D3 /* ball_orange.png */,
 				4AF63C7C18FA978F00D3D9D3 /* ball_purple.png */,
 				4AF63C7D18FA978F00D3D9D3 /* ball_red.png */,
+				4AF63C9318FAA15F00D3D9D3 /* ball_bronze_s.png */,
+				4AF63C9418FAA15F00D3D9D3 /* ball_crystal_s.png */,
+				4AF63C9518FAA15F00D3D9D3 /* ball_gold_s.png */,
+				4AF63C9618FAA15F00D3D9D3 /* ball_platinum_s.png */,
+				4AF63C9718FAA15F00D3D9D3 /* ball_prize_s.png */,
+				4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */,
+				4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */,
+				4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */,
 				4AF63C7E18FA978F00D3D9D3 /* ball_yellow.png */,
 				63C5F40D18C9BCBB00F2C2FF /* TappyPlanes-Info.plist */,
+				4AF63C8518FAA13A00D3D9D3 /* ball_bronze.png */,
+				4AF63C8618FAA13A00D3D9D3 /* ball_crystal.png */,
+				4AF63C8718FAA13A00D3D9D3 /* ball_gold.png */,
+				4AF63C8818FAA13A00D3D9D3 /* ball_prize.png */,
+				4AF63C8918FAA13A00D3D9D3 /* ball_rainbow.png */,
+				4AF63C8A18FAA13A00D3D9D3 /* ball_rock.png */,
+				4AF63C8B18FAA13A00D3D9D3 /* ball_silver.png */,
 				4AF63C6D18FA978300D3D9D3 /* ball_blue_s.png */,
 				4AF63C6E18FA978300D3D9D3 /* ball_green_s.png */,
 				4AF63C6F18FA978300D3D9D3 /* ball_orange_s.png */,
@@ -334,26 +379,41 @@
 				4AF63C7F18FA978F00D3D9D3 /* ball_blue.png in Resources */,
 				63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */,
 				4AF63C8218FA978F00D3D9D3 /* ball_purple.png in Resources */,
+				4AF63C9B18FAA15F00D3D9D3 /* ball_bronze_s.png in Resources */,
 				63C5F41018C9BCBB00F2C2FF /* InfoPlist.strings in Resources */,
 				63C5F42318C9BCBB00F2C2FF /* Images.xcassets in Resources */,
 				63C5F42118C9BCBB00F2C2FF /* Spaceship.png in Resources */,
+				4AF63C9118FAA13A00D3D9D3 /* ball_rock.png in Resources */,
+				4AF63C9F18FAA15F00D3D9D3 /* ball_prize_s.png in Resources */,
 				63D5FFC018F8144E00176BBD /* Go Cart.m4a in Resources */,
+				4AF63C9C18FAA15F00D3D9D3 /* ball_crystal_s.png in Resources */,
 				63D5FFB218F80EDC00176BBD /* slide1_balls.png in Resources */,
+				4AF63C8C18FAA13A00D3D9D3 /* ball_bronze.png in Resources */,
 				63D5FFB418F8119100176BBD /* redball.png in Resources */,
 				63D5FFB818F8121A00176BBD /* Resized-U7J6T.png in Resources */,
+				4AF63C9018FAA13A00D3D9D3 /* ball_rainbow.png in Resources */,
 				4AF63C6C18FA691300D3D9D3 /* balls.plist in Resources */,
 				4AF63C8118FA978F00D3D9D3 /* ball_orange.png in Resources */,
+				4AF63C9E18FAA15F00D3D9D3 /* ball_platinum_s.png in Resources */,
+				4AF63C9D18FAA15F00D3D9D3 /* ball_gold_s.png in Resources */,
 				4AF63C8018FA978F00D3D9D3 /* ball_green.png in Resources */,
 				4AF63C7718FA978300D3D9D3 /* ball_red_s.png in Resources */,
+				4AF63C9218FAA13A00D3D9D3 /* ball_silver.png in Resources */,
 				63D5FFBE18F8141600176BBD /* Go Cart.mp3 in Resources */,
 				4AF63C7318FA978300D3D9D3 /* ball_blue_s.png in Resources */,
 				63D5FFB618F811AC00176BBD /* Go Cart - Loop Mix.mp3 in Resources */,
+				4AF63CA218FAA15F00D3D9D3 /* ball_silver_s.png in Resources */,
+				4AF63CA118FAA15F00D3D9D3 /* ball_rock_s.png in Resources */,
+				4AF63CA018FAA15F00D3D9D3 /* ball_rainbow_s.png in Resources */,
 				63C5F41918C9BCBB00F2C2FF /* Main.storyboard in Resources */,
 				4AF63C8318FA978F00D3D9D3 /* ball_red.png in Resources */,
 				4AF63C7818FA978300D3D9D3 /* ball_yellow_s.png in Resources */,
 				63C5F44518C9C37000F2C2FF /* Plane 2.png in Resources */,
+				4AF63C8F18FAA13A00D3D9D3 /* ball_prize.png in Resources */,
 				4AF63C7518FA978300D3D9D3 /* ball_orange_s.png in Resources */,
 				63C5F44318C9C32000F2C2FF /* Plane.png in Resources */,
+				4AF63C8D18FAA13A00D3D9D3 /* ball_crystal.png in Resources */,
+				4AF63C8E18FAA13A00D3D9D3 /* ball_gold.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
