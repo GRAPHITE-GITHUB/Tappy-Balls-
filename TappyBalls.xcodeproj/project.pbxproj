@@ -79,6 +79,9 @@
 		63D5FFC018F8144E00176BBD /* Go Cart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFBF18F8144E00176BBD /* Go Cart.m4a */; };
 		63D5FFC318FA2DD300176BBD /* EpicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D5FFC218FA2DD300176BBD /* EpicViewController.m */; };
 		63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */; };
+		63ED99B718FB91800056E114 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED99B618FB91800056E114 /* GameCenterManager.m */; };
+		63ED99BA18FB98460056E114 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED99B918FB98460056E114 /* GameKit.framework */; };
+		63ED99BC18FB98FB0056E114 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED99BB18FB98FB0056E114 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +180,11 @@
 		63D5FFC118FA2DD300176BBD /* EpicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpicViewController.h; sourceTree = "<group>"; };
 		63D5FFC218FA2DD300176BBD /* EpicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpicViewController.m; sourceTree = "<group>"; };
 		63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resized-IARCY.png"; sourceTree = "<group>"; };
+		63ED99B518FB91800056E114 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		63ED99B618FB91800056E114 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		63ED99B818FB91E20056E114 /* AppSpecificValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSpecificValues.h; sourceTree = "<group>"; };
+		63ED99B918FB98460056E114 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		63ED99BB18FB98FB0056E114 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +192,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63ED99BC18FB98FB0056E114 /* StoreKit.framework in Frameworks */,
 				63D5FFBC18F813B900176BBD /* AVFoundation.framework in Frameworks */,
 				63D5FFBA18F813B300176BBD /* AudioToolbox.framework in Frameworks */,
 				63C5F44718C9C78800F2C2FF /* iAd.framework in Frameworks */,
@@ -191,6 +200,7 @@
 				63C5F40818C9BCBB00F2C2FF /* UIKit.framework in Frameworks */,
 				63C5F40A18C9BCBB00F2C2FF /* SpriteKit.framework in Frameworks */,
 				63C5F40418C9BCBB00F2C2FF /* Foundation.framework in Frameworks */,
+				63ED99BA18FB98460056E114 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +318,8 @@
 		63C5F40218C9BCBB00F2C2FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63ED99BB18FB98FB0056E114 /* StoreKit.framework */,
+				63ED99B918FB98460056E114 /* GameKit.framework */,
 				63D5FFBB18F813B900176BBD /* AVFoundation.framework */,
 				63D5FFB918F813B300176BBD /* AudioToolbox.framework */,
 				63C5F44618C9C78800F2C2FF /* iAd.framework */,
@@ -326,8 +338,11 @@
 				63C5F41418C9BCBB00F2C2FF /* AppDelegate.h */,
 				63C5F41518C9BCBB00F2C2FF /* AppDelegate.m */,
 				63C5F41718C9BCBB00F2C2FF /* Main.storyboard */,
+				63ED99B818FB91E20056E114 /* AppSpecificValues.h */,
 				63C5F41B18C9BCBB00F2C2FF /* ViewController.m */,
 				63C5F41A18C9BCBB00F2C2FF /* ViewController.h */,
+				63ED99B518FB91800056E114 /* GameCenterManager.h */,
+				63ED99B618FB91800056E114 /* GameCenterManager.m */,
 				63C5F41D18C9BCBB00F2C2FF /* MyScene.h */,
 				63C5F41E18C9BCBB00F2C2FF /* MyScene.m */,
 				63D5FFB118F80EDC00176BBD /* slide1_balls.png */,
@@ -433,6 +448,17 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "David McAfee";
 				TargetAttributes = {
+					63C5F3FF18C9BCBB00F2C2FF = {
+						DevelopmentTeam = FF5R64KLU6;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
 					63C5F42718C9BCBB00F2C2FF = {
 						TestTargetID = 63C5F3FF18C9BCBB00F2C2FF;
 					};
@@ -537,6 +563,7 @@
 				63C5F44118C9BD9000F2C2FF /* Bird.m in Sources */,
 				63D5FFC318FA2DD300176BBD /* EpicViewController.m in Sources */,
 				63C5F41F18C9BCBB00F2C2FF /* MyScene.m in Sources */,
+				63ED99B718FB91800056E114 /* GameCenterManager.m in Sources */,
 				63C5F41C18C9BCBB00F2C2FF /* ViewController.m in Sources */,
 				63C5F41618C9BCBB00F2C2FF /* AppDelegate.m in Sources */,
 				63C5F41218C9BCBB00F2C2FF /* main.m in Sources */,
@@ -666,10 +693,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TappyPlanes/TappyBalls-Prefix.pch";
 				INFOPLIST_FILE = "TappyPlanes/TappyBalls-Info.plist";
 				PRODUCT_NAME = TappyBalls;
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -680,10 +710,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TappyPlanes/TappyBalls-Prefix.pch";
 				INFOPLIST_FILE = "TappyPlanes/TappyBalls-Info.plist";
 				PRODUCT_NAME = TappyBalls;
+				PROVISIONING_PROFILE = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
