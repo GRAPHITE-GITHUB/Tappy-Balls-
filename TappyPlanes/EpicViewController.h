@@ -7,12 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GameCenterManager.h"
+#import <GameController/GameController.h>
+#import <GameKit/GameKit.h>
+
+@class GameCenterManager;
 
 @interface EpicViewController : UIViewController {
     
     IBOutlet UILabel *scoreLabel;
+    GameCenterManager *gameCenterManager;
+    NSString* currentLeaderBoard;
+    
 }
 
 @property (nonatomic,retain)IBOutlet UILabel *scoreLabel;
+@property (nonatomic, retain) NSString* currentLeaderBoard;
+@property (nonatomic, retain) GameCenterManager *gameCenterManager;
+- (IBAction) showLeaderboard;
 
 @end

@@ -10,6 +10,7 @@
 #import "MyScene.h"
 #import <AVFoundation/AVAudioPlayer.h>
 #import "EpicViewController.h"
+#import "AppSpecificValues.h"
 
 @implementation ViewController
 @synthesize bannerIsVisible;
@@ -19,12 +20,30 @@
 @synthesize currentScore;
 @synthesize totalScore;
 @synthesize gameOver;
+ @synthesize gameCenterManager;
+@synthesize currentLeaderBoard;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     [gameOver setHidden:YES];
+    
+    self.currentLeaderBoard = kLeaderboardID;
+   
+    
+    if ([GameCenterManager isGameCenterAvailable]) {
+        
+        self.gameCenterManager = [[GameCenterManager alloc] init];
+        [self.gameCenterManager setDelegate:self];
+        [self.gameCenterManager authenticateLocalUser];
+        
+        
+    } else {
+        
+        NSLog(@"Device does not support game centre");
+        
+    }
 
     myTimer = [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector (showData)userInfo: nil
                                               repeats: YES];
@@ -55,6 +74,9 @@
     [skView presentScene:scene];
 }
 
+
+
+
 -(void)showData {
    
     if([label3.text isEqual:@"POINTS"]){
@@ -68,6 +90,13 @@
     else{
         
         
+    }
+    
+    {
+        if(self.currentScore > 0)
+        {
+            [self.gameCenterManager reportScore: self.currentScore forCategory: self.currentLeaderBoard];
+        }
     }
 }
 

@@ -7,9 +7,13 @@
 //
 
 #import "EpicViewController.h"
+#import "AppSpecificValues.h"
 
 @implementation EpicViewController
 @synthesize scoreLabel;
+@synthesize gameCenterManager;
+@synthesize currentLeaderBoard;
+
 
 -(void)viewDidLoad {
    
@@ -19,24 +23,41 @@
     
     scoreLabel.text= score;
     
-    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 12,
-                                        scrollView.frame.size.height);
-    scrollView.pagingEnabled=YES;
-    scrollView.backgroundColor = [UIColor blackColor];
+    self.currentLeaderBoard = kLeaderboardID;
     
-    UIView *views = [[UIView alloc]
-                     initWithFrame:CGRectMake(((scrollView.frame.size.width)*0)+20, 10,
-                                              (scrollView.frame.size.width)-40, scrollView.frame.size.height-20)];
-    views.backgroundColor=[UIColor yellowColor];
-    [views setTag:0];
-    [scrollView addSubview:views];
     
-    UIView *views2 = [[UIView alloc]
-                     initWithFrame:CGRectMake(((scrollView.frame.size.width)*2)+20, 10,
-                                              (scrollView.frame.size.width)-40, scrollView.frame.size.height-20)];
-    views2.backgroundColor=[UIColor blueColor];
-    [views setTag:2];
-    [scrollView addSubview:views2];
+    if ([GameCenterManager isGameCenterAvailable]) {
+        
+        self.gameCenterManager = [[GameCenterManager alloc] init];
+        [self.gameCenterManager setDelegate:self];
+        [self.gameCenterManager authenticateLocalUser];
+        
+        
+    } else {
+        
+        NSLog(@"Device does not support game centre");
+        
+    }
+
+    
+//    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 12,
+//                                        scrollView.frame.size.height);
+//    scrollView.pagingEnabled=YES;
+//    scrollView.backgroundColor = [UIColor blackColor];
+//    
+//    UIView *views = [[UIView alloc]
+//                     initWithFrame:CGRectMake(((scrollView.frame.size.width)*0)+20, 10,
+//                                              (scrollView.frame.size.width)-40, scrollView.frame.size.height-20)];
+//    views.backgroundColor=[UIColor yellowColor];
+//    [views setTag:0];
+//    [scrollView addSubview:views];
+//    
+//    UIView *views2 = [[UIView alloc]
+//                     initWithFrame:CGRectMake(((scrollView.frame.size.width)*2)+20, 10,
+//                                              (scrollView.frame.size.width)-40, scrollView.frame.size.height-20)];
+//    views2.backgroundColor=[UIColor blueColor];
+//    [views setTag:2];
+//    [scrollView addSubview:views2];
     
 //    int i = 0;
 //    while (i<=11) {
@@ -79,6 +100,25 @@
        [alert show];
     }
     
+}
+
+- (IBAction) showLeaderboard
+{
+    GKLeaderboardViewController *leaderboardController = [[GKLeaderboardViewController alloc] init];
+    if (leaderboardController != NULL)
+    {
+        leaderboardController.category = self.currentLeaderBoard;
+        leaderboardController.timeScope = GKLeaderboardTimeScopeWeek;
+        leaderboardController.leaderboardDelegate = self;
+        [self presentModalViewController: leaderboardController animated: YES];
+    }
+}
+
+
+- (void)leaderboardViewControllerDidFinish:(GKLeaderboardViewController *)viewController
+{
+    [self dismissModalViewControllerAnimated: YES];
+
 }
 
 
