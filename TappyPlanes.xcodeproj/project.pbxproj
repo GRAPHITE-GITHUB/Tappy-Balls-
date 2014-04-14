@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		4AED294F18FB9743003FECBF /* tappyballs.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED294E18FB9743003FECBF /* tappyballs.png */; };
+		4AED295418FBA92E003FECBF /* ambience.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295318FBA92E003FECBF /* ambience.png */; };
+		4AED295718FBA935003FECBF /* bottom_art.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295518FBA935003FECBF /* bottom_art.png */; };
+		4AED295818FBA935003FECBF /* top_art.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295618FBA935003FECBF /* top_art.png */; };
+		4AED295B18FBA944003FECBF /* nc_logo_credits.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295918FBA944003FECBF /* nc_logo_credits.png */; };
+		4AED295C18FBA944003FECBF /* tappyballs_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295A18FBA944003FECBF /* tappyballs_logo.png */; };
+		4AED296618FBA95E003FECBF /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296118FBA95E003FECBF /* play_button.png */; };
+		4AED296818FBA967003FECBF /* bos-artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296718FBA967003FECBF /* bos-artwork.png */; };
+		4AED296A18FBA9B4003FECBF /* GRAPHITE.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296918FBA9B4003FECBF /* GRAPHITE.png */; };
+		4AED296F18FBABDC003FECBF /* bos.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296B18FBABDC003FECBF /* bos.png */; };
+		4AED297018FBABDC003FECBF /* control_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296C18FBABDC003FECBF /* control_button.png */; };
+		4AED297118FBABDC003FECBF /* leave_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296D18FBABDC003FECBF /* leave_button.png */; };
+		4AED297218FBABDC003FECBF /* pause_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED296E18FBABDC003FECBF /* pause_button.png */; };
 		4AF63C6C18FA691300D3D9D3 /* balls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C6B18FA691300D3D9D3 /* balls.plist */; };
 		4AF63C7318FA978300D3D9D3 /* ball_blue_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C6D18FA978300D3D9D3 /* ball_blue_s.png */; };
 		4AF63C7418FA978300D3D9D3 /* ball_green_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C6E18FA978300D3D9D3 /* ball_green_s.png */; };
@@ -81,6 +93,23 @@
 
 /* Begin PBXFileReference section */
 		4AED294E18FB9743003FECBF /* tappyballs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tappyballs.png; sourceTree = "<group>"; };
+		4AED295318FBA92E003FECBF /* ambience.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ambience.png; sourceTree = "<group>"; };
+		4AED295518FBA935003FECBF /* bottom_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_art.png; sourceTree = "<group>"; };
+		4AED295618FBA935003FECBF /* top_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_art.png; sourceTree = "<group>"; };
+		4AED295918FBA944003FECBF /* nc_logo_credits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nc_logo_credits.png; sourceTree = "<group>"; };
+		4AED295A18FBA944003FECBF /* tappyballs_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tappyballs_logo.png; sourceTree = "<group>"; };
+		4AED296118FBA95E003FECBF /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button.png; sourceTree = "<group>"; };
+		4AED296718FBA967003FECBF /* bos-artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bos-artwork.png"; sourceTree = "<group>"; };
+		4AED296918FBA9B4003FECBF /* GRAPHITE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GRAPHITE.png; sourceTree = "<group>"; };
+		4AED296B18FBABDC003FECBF /* bos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bos.png; sourceTree = "<group>"; };
+		4AED296C18FBABDC003FECBF /* control_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control_button.png; sourceTree = "<group>"; };
+		4AED296D18FBABDC003FECBF /* leave_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leave_button.png; sourceTree = "<group>"; };
+		4AED296E18FBABDC003FECBF /* pause_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_button.png; sourceTree = "<group>"; };
+		4AED297418FBAC4B003FECBF /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		4AED297518FBAC6A003FECBF /* MyriadPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Bold.otf"; sourceTree = "<group>"; };
+		4AED297618FBAC7B003FECBF /* MyriadPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-It.otf"; sourceTree = "<group>"; };
+		4AED297718FBAC9C003FECBF /* GRAPHITE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GRAPHITE.ttf; sourceTree = "<group>"; };
+		4AED297818FBAC9C003FECBF /* GRAPHITE2.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GRAPHITE2.ttf; sourceTree = "<group>"; };
 		4AF63C6B18FA691300D3D9D3 /* balls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = balls.plist; sourceTree = "<group>"; };
 		4AF63C6D18FA978300D3D9D3 /* ball_blue_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_blue_s.png; sourceTree = "<group>"; };
 		4AF63C6E18FA978300D3D9D3 /* ball_green_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_green_s.png; sourceTree = "<group>"; };
@@ -178,6 +207,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AED295018FBA8DF003FECBF /* artwork */ = {
+			isa = PBXGroup;
+			children = (
+				4AED296718FBA967003FECBF /* bos-artwork.png */,
+				4AED295518FBA935003FECBF /* bottom_art.png */,
+				4AED295618FBA935003FECBF /* top_art.png */,
+			);
+			name = artwork;
+			sourceTree = "<group>";
+		};
+		4AED295118FBA8F2003FECBF /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				4AED296B18FBABDC003FECBF /* bos.png */,
+				4AED296C18FBABDC003FECBF /* control_button.png */,
+				4AED296D18FBABDC003FECBF /* leave_button.png */,
+				4AED296E18FBABDC003FECBF /* pause_button.png */,
+				4AED296118FBA95E003FECBF /* play_button.png */,
+			);
+			name = controls;
+			sourceTree = "<group>";
+		};
+		4AED295218FBA913003FECBF /* graphics */ = {
+			isa = PBXGroup;
+			children = (
+				4AED296918FBA9B4003FECBF /* GRAPHITE.png */,
+				4AED295918FBA944003FECBF /* nc_logo_credits.png */,
+				4AED295A18FBA944003FECBF /* tappyballs_logo.png */,
+				4AED295318FBA92E003FECBF /* ambience.png */,
+			);
+			name = graphics;
+			sourceTree = "<group>";
+		};
+		4AED297318FBABFB003FECBF /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4AED297718FBAC9C003FECBF /* GRAPHITE.ttf */,
+				4AED297818FBAC9C003FECBF /* GRAPHITE2.ttf */,
+				4AED297618FBAC7B003FECBF /* MyriadPro-It.otf */,
+				4AED297518FBAC6A003FECBF /* MyriadPro-Bold.otf */,
+				4AED297418FBAC4B003FECBF /* MyriadPro-Regular.otf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
 		4AF63CA318FAA21B00D3D9D3 /* balls */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +353,10 @@
 		63C5F40C18C9BCBB00F2C2FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4AED297318FBABFB003FECBF /* fonts */,
+				4AED295218FBA913003FECBF /* graphics */,
+				4AED295118FBA8F2003FECBF /* controls */,
+				4AED295018FBA8DF003FECBF /* artwork */,
 				4AF63C6B18FA691300D3D9D3 /* balls.plist */,
 				4AED294E18FB9743003FECBF /* tappyballs.png */,
 				4AF63CA318FAA21B00D3D9D3 /* balls */,
@@ -388,11 +466,14 @@
 				4AF63C7418FA978300D3D9D3 /* ball_green_s.png in Resources */,
 				4AF63C8418FA978F00D3D9D3 /* ball_yellow.png in Resources */,
 				4AF63C7F18FA978F00D3D9D3 /* ball_blue.png in Resources */,
+				4AED295418FBA92E003FECBF /* ambience.png in Resources */,
 				63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */,
 				4AF63C8218FA978F00D3D9D3 /* ball_purple.png in Resources */,
+				4AED296818FBA967003FECBF /* bos-artwork.png in Resources */,
 				4AF63C9B18FAA15F00D3D9D3 /* ball_bronze_s.png in Resources */,
 				63C5F41018C9BCBB00F2C2FF /* InfoPlist.strings in Resources */,
 				63C5F42318C9BCBB00F2C2FF /* Images.xcassets in Resources */,
+				4AED296A18FBA9B4003FECBF /* GRAPHITE.png in Resources */,
 				63C5F42118C9BCBB00F2C2FF /* Spaceship.png in Resources */,
 				4AF63C9118FAA13A00D3D9D3 /* ball_rock.png in Resources */,
 				4AF63C9F18FAA15F00D3D9D3 /* ball_prize_s.png in Resources */,
@@ -400,6 +481,7 @@
 				4AF63C9C18FAA15F00D3D9D3 /* ball_crystal_s.png in Resources */,
 				63D5FFB218F80EDC00176BBD /* slide1_balls.png in Resources */,
 				4AF63C8C18FAA13A00D3D9D3 /* ball_bronze.png in Resources */,
+				4AED297118FBABDC003FECBF /* leave_button.png in Resources */,
 				63D5FFB418F8119100176BBD /* redball.png in Resources */,
 				63D5FFB818F8121A00176BBD /* Resized-U7J6T.png in Resources */,
 				4AF63C9018FAA13A00D3D9D3 /* ball_rainbow.png in Resources */,
@@ -418,11 +500,19 @@
 				4AF63CA018FAA15F00D3D9D3 /* ball_rainbow_s.png in Resources */,
 				63C5F41918C9BCBB00F2C2FF /* Main.storyboard in Resources */,
 				4AF63C8318FA978F00D3D9D3 /* ball_red.png in Resources */,
+				4AED297018FBABDC003FECBF /* control_button.png in Resources */,
 				4AF63C7818FA978300D3D9D3 /* ball_yellow_s.png in Resources */,
+				4AED296618FBA95E003FECBF /* play_button.png in Resources */,
+				4AED296F18FBABDC003FECBF /* bos.png in Resources */,
+				4AED295B18FBA944003FECBF /* nc_logo_credits.png in Resources */,
+				4AED295818FBA935003FECBF /* top_art.png in Resources */,
+				4AED295718FBA935003FECBF /* bottom_art.png in Resources */,
 				63C5F44518C9C37000F2C2FF /* Plane 2.png in Resources */,
 				4AF63C8F18FAA13A00D3D9D3 /* ball_prize.png in Resources */,
 				4AF63C7518FA978300D3D9D3 /* ball_orange_s.png in Resources */,
+				4AED295C18FBA944003FECBF /* tappyballs_logo.png in Resources */,
 				63C5F44318C9C32000F2C2FF /* Plane.png in Resources */,
+				4AED297218FBABDC003FECBF /* pause_button.png in Resources */,
 				4AED294F18FB9743003FECBF /* tappyballs.png in Resources */,
 				4AF63C8D18FAA13A00D3D9D3 /* ball_crystal.png in Resources */,
 				4AF63C8E18FAA13A00D3D9D3 /* ball_gold.png in Resources */,
