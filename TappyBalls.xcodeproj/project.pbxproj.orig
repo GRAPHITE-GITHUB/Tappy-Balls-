@@ -95,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD:TappyBalls.xcodeproj/project.pbxproj
 		4AED294E18FB9743003FECBF /* tappyballs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tappyballs.png; sourceTree = "<group>"; };
 		4AED295318FBA92E003FECBF /* ambience.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ambience.png; sourceTree = "<group>"; };
 		4AED295518FBA935003FECBF /* bottom_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_art.png; sourceTree = "<group>"; };
@@ -141,6 +142,8 @@
 		4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rainbow_s.png; sourceTree = "<group>"; };
 		4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rock_s.png; sourceTree = "<group>"; };
 		4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_silver_s.png; sourceTree = "<group>"; };
+=======
+>>>>>>> master:TappyBalls.xcodeproj/project.pbxproj
 		63C5F40018C9BCBB00F2C2FF /* TappyBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5F40318C9BCBB00F2C2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63C5F40518C9BCBB00F2C2FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -368,6 +371,7 @@
 		63C5F40C18C9BCBB00F2C2FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD:TappyBalls.xcodeproj/project.pbxproj
 				4AED297318FBABFB003FECBF /* fonts */,
 				4AED295218FBA913003FECBF /* graphics */,
 				4AED295118FBA8F2003FECBF /* controls */,
@@ -375,6 +379,8 @@
 				4AF63C6B18FA691300D3D9D3 /* balls.plist */,
 				4AED294E18FB9743003FECBF /* tappyballs.png */,
 				4AF63CA318FAA21B00D3D9D3 /* balls */,
+=======
+>>>>>>> master:TappyBalls.xcodeproj/project.pbxproj
 				63C5F40D18C9BCBB00F2C2FF /* TappyBalls-Info.plist */,
 				63C5F40E18C9BCBB00F2C2FF /* InfoPlist.strings */,
 				63C5F41118C9BCBB00F2C2FF /* main.m */,
