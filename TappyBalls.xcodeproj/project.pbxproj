@@ -138,15 +138,15 @@
 		4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rainbow_s.png; sourceTree = "<group>"; };
 		4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rock_s.png; sourceTree = "<group>"; };
 		4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_silver_s.png; sourceTree = "<group>"; };
-		63C5F40018C9BCBB00F2C2FF /* TappyPlanes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyPlanes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C5F40018C9BCBB00F2C2FF /* TappyBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5F40318C9BCBB00F2C2FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		63C5F40518C9BCBB00F2C2FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		63C5F40718C9BCBB00F2C2FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		63C5F40918C9BCBB00F2C2FF /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
-		63C5F40D18C9BCBB00F2C2FF /* TappyPlanes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TappyPlanes-Info.plist"; sourceTree = "<group>"; };
+		63C5F40D18C9BCBB00F2C2FF /* TappyBalls-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TappyBalls-Info.plist"; sourceTree = "<group>"; };
 		63C5F40F18C9BCBB00F2C2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63C5F41118C9BCBB00F2C2FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63C5F41318C9BCBB00F2C2FF /* TappyPlanes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TappyPlanes-Prefix.pch"; sourceTree = "<group>"; };
+		63C5F41318C9BCBB00F2C2FF /* TappyBalls-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TappyBalls-Prefix.pch"; sourceTree = "<group>"; };
 		63C5F41418C9BCBB00F2C2FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63C5F41518C9BCBB00F2C2FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		63C5F41818C9BCBB00F2C2FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,9 +156,9 @@
 		63C5F41E18C9BCBB00F2C2FF /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
 		63C5F42018C9BCBB00F2C2FF /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		63C5F42218C9BCBB00F2C2FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		63C5F42818C9BCBB00F2C2FF /* TappyPlanesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TappyPlanesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C5F42818C9BCBB00F2C2FF /* TappyBallsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TappyBallsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C5F42918C9BCBB00F2C2FF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		63C5F43118C9BCBB00F2C2FF /* TappyPlanesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TappyPlanesTests-Info.plist"; sourceTree = "<group>"; };
+		63C5F43118C9BCBB00F2C2FF /* TappyBallsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TappyBallsTests-Info.plist"; sourceTree = "<group>"; };
 		63C5F43318C9BCBB00F2C2FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63C5F43518C9BCBB00F2C2FF /* TappyPlanesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TappyPlanesTests.m; sourceTree = "<group>"; };
 		63C5F43F18C9BD9000F2C2FF /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
@@ -299,8 +299,8 @@
 		63C5F40118C9BCBB00F2C2FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63C5F40018C9BCBB00F2C2FF /* TappyPlanes.app */,
-				63C5F42818C9BCBB00F2C2FF /* TappyPlanesTests.xctest */,
+				63C5F40018C9BCBB00F2C2FF /* TappyBalls.app */,
+				63C5F42818C9BCBB00F2C2FF /* TappyBallsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,10 +360,10 @@
 				4AF63C6B18FA691300D3D9D3 /* balls.plist */,
 				4AED294E18FB9743003FECBF /* tappyballs.png */,
 				4AF63CA318FAA21B00D3D9D3 /* balls */,
-				63C5F40D18C9BCBB00F2C2FF /* TappyPlanes-Info.plist */,
+				63C5F40D18C9BCBB00F2C2FF /* TappyBalls-Info.plist */,
 				63C5F40E18C9BCBB00F2C2FF /* InfoPlist.strings */,
 				63C5F41118C9BCBB00F2C2FF /* main.m */,
-				63C5F41318C9BCBB00F2C2FF /* TappyPlanes-Prefix.pch */,
+				63C5F41318C9BCBB00F2C2FF /* TappyBalls-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 		63C5F43018C9BCBB00F2C2FF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				63C5F43118C9BCBB00F2C2FF /* TappyPlanesTests-Info.plist */,
+				63C5F43118C9BCBB00F2C2FF /* TappyBallsTests-Info.plist */,
 				63C5F43218C9BCBB00F2C2FF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -389,9 +389,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63C5F3FF18C9BCBB00F2C2FF /* TappyPlanes */ = {
+		63C5F3FF18C9BCBB00F2C2FF /* TappyBalls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63C5F43918C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyPlanes" */;
+			buildConfigurationList = 63C5F43918C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyBalls" */;
 			buildPhases = (
 				63C5F3FC18C9BCBB00F2C2FF /* Sources */,
 				63C5F3FD18C9BCBB00F2C2FF /* Frameworks */,
@@ -401,14 +401,14 @@
 			);
 			dependencies = (
 			);
-			name = TappyPlanes;
+			name = TappyBalls;
 			productName = TappyPlanes;
-			productReference = 63C5F40018C9BCBB00F2C2FF /* TappyPlanes.app */;
+			productReference = 63C5F40018C9BCBB00F2C2FF /* TappyBalls.app */;
 			productType = "com.apple.product-type.application";
 		};
-		63C5F42718C9BCBB00F2C2FF /* TappyPlanesTests */ = {
+		63C5F42718C9BCBB00F2C2FF /* TappyBallsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63C5F43C18C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyPlanesTests" */;
+			buildConfigurationList = 63C5F43C18C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyBallsTests" */;
 			buildPhases = (
 				63C5F42418C9BCBB00F2C2FF /* Sources */,
 				63C5F42518C9BCBB00F2C2FF /* Frameworks */,
@@ -419,9 +419,9 @@
 			dependencies = (
 				63C5F42E18C9BCBB00F2C2FF /* PBXTargetDependency */,
 			);
-			name = TappyPlanesTests;
+			name = TappyBallsTests;
 			productName = TappyPlanesTests;
-			productReference = 63C5F42818C9BCBB00F2C2FF /* TappyPlanesTests.xctest */;
+			productReference = 63C5F42818C9BCBB00F2C2FF /* TappyBallsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -438,7 +438,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 63C5F3FB18C9BCBB00F2C2FF /* Build configuration list for PBXProject "TappyPlanes" */;
+			buildConfigurationList = 63C5F3FB18C9BCBB00F2C2FF /* Build configuration list for PBXProject "TappyBalls" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -451,8 +451,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63C5F3FF18C9BCBB00F2C2FF /* TappyPlanes */,
-				63C5F42718C9BCBB00F2C2FF /* TappyPlanesTests */,
+				63C5F3FF18C9BCBB00F2C2FF /* TappyBalls */,
+				63C5F42718C9BCBB00F2C2FF /* TappyBallsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -556,7 +556,7 @@
 /* Begin PBXTargetDependency section */
 		63C5F42E18C9BCBB00F2C2FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 63C5F3FF18C9BCBB00F2C2FF /* TappyPlanes */;
+			target = 63C5F3FF18C9BCBB00F2C2FF /* TappyBalls */;
 			targetProxy = 63C5F42D18C9BCBB00F2C2FF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -667,9 +667,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TappyPlanes/TappyPlanes-Prefix.pch";
-				INFOPLIST_FILE = "TappyPlanes/TappyPlanes-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TappyPlanes/TappyBalls-Prefix.pch";
+				INFOPLIST_FILE = "TappyPlanes/TappyBalls-Info.plist";
+				PRODUCT_NAME = TappyBalls;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -681,9 +681,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TappyPlanes/TappyPlanes-Prefix.pch";
-				INFOPLIST_FILE = "TappyPlanes/TappyPlanes-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "TappyPlanes/TappyBalls-Prefix.pch";
+				INFOPLIST_FILE = "TappyPlanes/TappyBalls-Info.plist";
+				PRODUCT_NAME = TappyBalls;
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -705,8 +705,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "TappyPlanesTests/TappyPlanesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TappyPlanesTests/TappyBallsTests-Info.plist";
+				PRODUCT_NAME = TappyBallsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -724,8 +724,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TappyPlanes/TappyPlanes-Prefix.pch";
-				INFOPLIST_FILE = "TappyPlanesTests/TappyPlanesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "TappyPlanesTests/TappyBallsTests-Info.plist";
+				PRODUCT_NAME = TappyBallsTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -734,7 +734,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63C5F3FB18C9BCBB00F2C2FF /* Build configuration list for PBXProject "TappyPlanes" */ = {
+		63C5F3FB18C9BCBB00F2C2FF /* Build configuration list for PBXProject "TappyBalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63C5F43718C9BCBB00F2C2FF /* Debug */,
@@ -743,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63C5F43918C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyPlanes" */ = {
+		63C5F43918C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyBalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63C5F43A18C9BCBB00F2C2FF /* Debug */,
@@ -752,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63C5F43C18C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyPlanesTests" */ = {
+		63C5F43C18C9BCBB00F2C2FF /* Build configuration list for PBXNativeTarget "TappyBallsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				63C5F43D18C9BCBB00F2C2FF /* Debug */,
