@@ -48,7 +48,7 @@
         self.isGameOver  = NO;
         self.currentDistanceBetweenObstacles = 0;
         
-        self.backgroundColor = [SKColor blackColor];
+        self.backgroundColor = [SKColor blueColor];
         self.physicsBody = [SKPhysicsBody bodyWithEdgeLoopFromRect:self.frame];
         
         
@@ -61,7 +61,7 @@
             self.bird = [Bird spriteNodeWithImageNamed:@"Resized-IARCY.png"];
         }else {
         
-        self.bird = [Bird spriteNodeWithImageNamed:@"Resized-U7J6T.png"];
+        self.bird = [Bird spriteNodeWithImageNamed:@"ball_blue.png"];
             
         }
         self.bird.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.bird.size.width/2];

@@ -13,7 +13,7 @@
 @synthesize scoreLabel;
 @synthesize gameCenterManager;
 @synthesize currentLeaderBoard;
-
+@synthesize ballTitle;
 
 -(void)viewDidLoad {
    
@@ -22,6 +22,8 @@
     NSString *score = [defaults objectForKey:@"score"];
     
     scoreLabel.text= score;
+    
+    [ballTitle setFont:[UIFont fontWithName:@"MyriadPro-Bold" size:17]];
     
     self.currentLeaderBoard = kLeaderboardID;
     

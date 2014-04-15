@@ -51,7 +51,7 @@
     myTimer2 = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector (showActivity)userInfo: nil
                                               repeats: YES];
     
-    myTimer3 = [NSTimer scheduledTimerWithTimeInterval:0.8 target:self selector:@selector (game)userInfo: nil
+    myTimer3 = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector (game)userInfo: nil
                                                repeats: YES];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

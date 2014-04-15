@@ -18,11 +18,13 @@
     IBOutlet UILabel *scoreLabel;
     GameCenterManager *gameCenterManager;
     NSString* currentLeaderBoard;
+    IBOutlet UILabel *ballTitle;
     
 }
 
 @property (nonatomic,retain)IBOutlet UILabel *scoreLabel;
 @property (nonatomic, retain) NSString* currentLeaderBoard;
+@property (nonatomic,retain) IBOutlet UILabel *ballTitle;
 @property (nonatomic, retain) GameCenterManager *gameCenterManager;
 - (IBAction) showLeaderboard;
 
