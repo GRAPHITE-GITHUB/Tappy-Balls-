@@ -9,11 +9,168 @@
 #import "EpicViewController.h"
 #import "AppSpecificValues.h"
 
+@interface EpicViewController () <UIActionSheetDelegate>
+@property (nonatomic, retain) NSArray *items;
+@end
+
 @implementation EpicViewController
 @synthesize scoreLabel;
 @synthesize gameCenterManager;
 @synthesize currentLeaderBoard;
 @synthesize ballTitle;
+@synthesize descriptionLabel;
+@synthesize ballLabel;
+@synthesize items;
+
+- (void)loadView {
+    
+	[super loadView];
+	
+	self.view.backgroundColor = [UIColor blueColor];
+	
+	
+	items = [NSArray arrayWithObjects:
+             
+             [UIImage imageNamed:@"ball_red.png"],
+              [UIImage imageNamed:@"ball_blue.png"],
+             [UIImage imageNamed:@"ball_green.png"],
+             [UIImage imageNamed:@"ball_yellow.png"],
+             [UIImage imageNamed:@"ball_orange.png"],
+             [UIImage imageNamed:@"ball_purple.png"],
+			 [UIImage imageNamed:@"ball_bronze.png"],
+             [UIImage imageNamed:@"ball_silver.png"],
+              [UIImage imageNamed:@"ball_gold.png"],
+			 [UIImage imageNamed:@"ball_crystal.png"],
+             [UIImage imageNamed:@"ball_prize.png"],
+             [UIImage imageNamed:@"ball_rainbow.png"],
+             [UIImage imageNamed:@"ball_rock.png"],
+             [UIImage imageNamed:@"ball_platinum.png"],
+			 nil];
+	
+	
+	carousel = [[iCarousel alloc] initWithFrame:self.view.bounds];
+	carousel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    carousel.type = iCarouselTypeLinear;
+	carousel.dataSource = self;
+	carousel.delegate = self;
+	[self.view addSubview:carousel];
+}
+
+
+#pragma mark -
+#pragma mark iCarousel datasource methods
+
+- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
+{
+    return [items count];
+}
+
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
+{
+ 	UIImage *image = [items objectAtIndex:index];
+	UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)] ;
+	[button setBackgroundImage:image forState:UIControlStateNormal];
+	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+	button.titleLabel.font = [button.titleLabel.font fontWithSize:50];
+	button.tag=index;
+	return button;
+	
+}
+
+#pragma mark -
+#pragma mark iCarousel delegate methods
+
+- (void)carousel: (iCarousel *)_carousel didSelectItemAtIndex:(NSInteger)index
+{
+    
+    NSLog(@"Did select item at index %d",index);
+    
+    if(index==0) {
+        
+        ballLabel.text=@"Red Ball";
+        descriptionLabel.text=@"The classic Tappy Balls ball.";
+    }
+    
+    if(index==1) {
+        
+        ballLabel.text=@"Blue Ball";
+        descriptionLabel.text=@"The finest ball so far.";
+    }
+    
+    if(index==2) {
+        
+        ballLabel.text=@"Green Ball";
+        descriptionLabel.text=@"The best ball yet.";
+    }
+    
+    if(index==3) {
+        
+        ballLabel.text=@"Yellow Ball";
+        descriptionLabel.text=@"The brightest ball thus far.";
+    }
+    if(index==4) {
+        
+        ballLabel.text=@"Orange Ball";
+        descriptionLabel.text=@"The fruitiest ball of the bunch.";
+    }
+    
+    if(index==5) {
+        
+        ballLabel.text=@"Purple Ball";
+        descriptionLabel.text=@"The prettiest ball so far.";
+    }
+    
+    if(index==6) {
+        
+        ballLabel.text=@"Bronze Ball";
+        descriptionLabel.text=@"Now we are getting serious.";
+    }
+    if(index==7) {
+        
+        ballLabel.text=@"Silver Ball";
+        descriptionLabel.text=@"The Tappy Ball addict's ball of choice.";
+    }
+    
+    if(index==8) {
+    
+        ballLabel.text=@"Gold Ball";
+        descriptionLabel.text=@"Malleable and ready to mingle!";
+    }
+    
+    if(index==9) {
+        
+        ballLabel.text=@"Crystal Ball";
+        descriptionLabel.text=@"See into the future. $0.99.";
+    }
+
+    if(index==10) {
+        
+        ballLabel.text=@"No-ball Prize";
+        descriptionLabel.text=@"Unleash your inner scientist. $0.99.";
+    }
+    
+    if(index==11) {
+        
+        ballLabel.text=@"Rainbow Ball";
+        descriptionLabel.text=@"Unlock balls via your score. $2.99.";
+    }
+    
+    if(index==12) {
+        
+        ballLabel.text=@"Rock";
+        descriptionLabel.text=@"Let's Rock and Roll. $0.99.";
+    }
+    if(index==13) {
+        
+        ballLabel.text=@"Game Centre";
+        descriptionLabel.text=@"For the competitive.";
+    }
+    
+    
+}
+
+
+
 
 -(void)viewDidLoad {
    

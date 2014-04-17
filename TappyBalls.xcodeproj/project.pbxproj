@@ -73,6 +73,7 @@
 		63C5F44318C9C32000F2C2FF /* Plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C5F44218C9C32000F2C2FF /* Plane.png */; };
 		63C5F44518C9C37000F2C2FF /* Plane 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 63C5F44418C9C37000F2C2FF /* Plane 2.png */; };
 		63C5F44718C9C78800F2C2FF /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F44618C9C78800F2C2FF /* iAd.framework */; };
+		63CE7EDD18FFF0F7003FBE56 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63CE7EDC18FFF0F7003FBE56 /* iCarousel.m */; };
 		63D5FFB218F80EDC00176BBD /* slide1_balls.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFB118F80EDC00176BBD /* slide1_balls.png */; };
 		63D5FFB418F8119100176BBD /* redball.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFB318F8119100176BBD /* redball.png */; };
 		63D5FFB618F811AC00176BBD /* Go Cart - Loop Mix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFB518F811AC00176BBD /* Go Cart - Loop Mix.mp3 */; };
@@ -177,6 +178,8 @@
 		63C5F44218C9C32000F2C2FF /* Plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Plane.png; sourceTree = "<group>"; };
 		63C5F44418C9C37000F2C2FF /* Plane 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Plane 2.png"; sourceTree = "<group>"; };
 		63C5F44618C9C78800F2C2FF /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		63CE7EDC18FFF0F7003FBE56 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		63CE7EDE18FFF100003FBE56 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		63D5FFB118F80EDC00176BBD /* slide1_balls.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slide1_balls.png; sourceTree = "<group>"; };
 		63D5FFB318F8119100176BBD /* redball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redball.png; sourceTree = "<group>"; };
 		63D5FFB518F811AC00176BBD /* Go Cart - Loop Mix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Go Cart - Loop Mix.mp3"; sourceTree = "<group>"; };
@@ -349,6 +352,8 @@
 				63C5F41418C9BCBB00F2C2FF /* AppDelegate.h */,
 				63C5F41518C9BCBB00F2C2FF /* AppDelegate.m */,
 				63C5F41718C9BCBB00F2C2FF /* Main.storyboard */,
+				63CE7EDE18FFF100003FBE56 /* iCarousel.h */,
+				63CE7EDC18FFF0F7003FBE56 /* iCarousel.m */,
 				63ED99B818FB91E20056E114 /* AppSpecificValues.h */,
 				63C5F41B18C9BCBB00F2C2FF /* ViewController.m */,
 				63C5F41A18C9BCBB00F2C2FF /* ViewController.h */,
@@ -581,6 +586,7 @@
 				63C5F41F18C9BCBB00F2C2FF /* MyScene.m in Sources */,
 				63ED99B718FB91800056E114 /* GameCenterManager.m in Sources */,
 				63C5F41C18C9BCBB00F2C2FF /* ViewController.m in Sources */,
+				63CE7EDD18FFF0F7003FBE56 /* iCarousel.m in Sources */,
 				63C5F41618C9BCBB00F2C2FF /* AppDelegate.m in Sources */,
 				63C5F41218C9BCBB00F2C2FF /* main.m in Sources */,
 			);

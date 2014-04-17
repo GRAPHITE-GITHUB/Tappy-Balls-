@@ -97,7 +97,18 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+
 {
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *menu = [defaults objectForKey:@"menu"];
+    
+    
+    if([menu isEqual:@"GAME"]){
+        
+    }else{
+
     for (UITouch *touch in touches) {
         if (!self.gameStarted) {
             self.gameStarted = YES;
@@ -114,7 +125,7 @@
             self.bird.physicsBody.dynamic = YES;
         }
         [self.bird bounce];
-    }
+    }}
 }
 
 -(void)update:(CFTimeInterval)currentTime
