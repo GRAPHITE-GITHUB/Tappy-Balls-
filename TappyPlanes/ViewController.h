@@ -12,6 +12,9 @@
 #import <GameController/GameController.h>
 #import <GameKit/GameKit.h>
 #import "GameCenterManager.h"
+#import <AVFoundation/AVAudioPlayer.h>
+
+#import <AudioToolbox/AudioToolbox.h>
 
 
 @class GameCenterManager;
@@ -19,7 +22,7 @@
 @interface ViewController : UIViewController  <ADBannerViewDelegate> {
 	ADBannerView *adView;
 	BOOL bannerIsVisible;
-    
+    SystemSoundID PlaySoundID;
     IBOutlet UILabel *label1;
     IBOutlet UILabel *label2;
     IBOutlet UILabel *label3;

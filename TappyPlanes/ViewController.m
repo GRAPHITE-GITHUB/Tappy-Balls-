@@ -29,6 +29,12 @@
     
     [gameOver setHidden:YES];
     
+    NSURL *SoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Monkeys Spinning Monkeys" ofType:@"mp3"]];
+    
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)SoundURL, &PlaySoundID);
+    
+    AudioServicesPlaySystemSound(PlaySoundID);
+    
     self.currentLeaderBoard = kLeaderboardID;
    
     

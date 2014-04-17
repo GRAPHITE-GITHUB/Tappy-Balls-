@@ -11,10 +11,14 @@
 #import <GameController/GameController.h>
 #import <GameKit/GameKit.h>
 #import "iCarousel.h"
+#import <AVFoundation/AVAudioPlayer.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @class GameCenterManager;
 
 @interface EpicViewController : UIViewController <iCarouselDataSource ,iCarouselDelegate> {
+    
+    SystemSoundID PlaySoundID;
     
     IBOutlet UILabel *scoreLabel;
     IBOutlet UILabel *ballLabel;

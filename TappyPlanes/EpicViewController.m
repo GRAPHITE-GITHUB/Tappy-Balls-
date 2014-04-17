@@ -8,6 +8,8 @@
 
 #import "EpicViewController.h"
 #import "AppSpecificValues.h"
+#import <AVFoundation/AVAudioPlayer.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface EpicViewController () <UIActionSheetDelegate>
 @property (nonatomic, retain) NSArray *items;
@@ -54,6 +56,8 @@
 	carousel.dataSource = self;
 	carousel.delegate = self;
 	[self.view addSubview:carousel];
+    
+   
 }
 
 
@@ -184,6 +188,11 @@
     
     self.currentLeaderBoard = kLeaderboardID;
     
+    NSURL *SoundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Pamgaea" ofType:@"mp3"]];
+    
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)SoundURL, &PlaySoundID);
+    
+    AudioServicesPlaySystemSound(PlaySoundID);
     
     if ([GameCenterManager isGameCenterAvailable]) {
         

@@ -84,6 +84,8 @@
 		63D5FFC018F8144E00176BBD /* Go Cart.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFBF18F8144E00176BBD /* Go Cart.m4a */; };
 		63D5FFC318FA2DD300176BBD /* EpicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D5FFC218FA2DD300176BBD /* EpicViewController.m */; };
 		63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */ = {isa = PBXBuildFile; fileRef = 63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */; };
+		63E8C8B01900084700057979 /* Pamgaea.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E8C8AF1900084700057979 /* Pamgaea.mp3 */; };
+		63E8C8B21900084B00057979 /* Monkeys Spinning Monkeys.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 63E8C8B11900084B00057979 /* Monkeys Spinning Monkeys.mp3 */; };
 		63ED99B718FB91800056E114 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 63ED99B618FB91800056E114 /* GameCenterManager.m */; };
 		63ED99BA18FB98460056E114 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED99B918FB98460056E114 /* GameKit.framework */; };
 		63ED99BC18FB98FB0056E114 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63ED99BB18FB98FB0056E114 /* StoreKit.framework */; };
@@ -191,6 +193,9 @@
 		63D5FFC118FA2DD300176BBD /* EpicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpicViewController.h; sourceTree = "<group>"; };
 		63D5FFC218FA2DD300176BBD /* EpicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpicViewController.m; sourceTree = "<group>"; };
 		63D5FFC418FA3B2A00176BBD /* Resized-IARCY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resized-IARCY.png"; sourceTree = "<group>"; };
+		63E8C8AF1900084700057979 /* Pamgaea.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Pamgaea.mp3; sourceTree = "<group>"; };
+		63E8C8B11900084B00057979 /* Monkeys Spinning Monkeys.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Monkeys Spinning Monkeys.mp3"; sourceTree = "<group>"; };
+		63E8C8B31900095F00057979 /* Pamgaea.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pamgaea.m4a; sourceTree = "<group>"; };
 		63ED99B518FB91800056E114 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		63ED99B618FB91800056E114 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
 		63ED99B818FB91E20056E114 /* AppSpecificValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSpecificValues.h; sourceTree = "<group>"; };
@@ -358,12 +363,15 @@
 				63C5F41B18C9BCBB00F2C2FF /* ViewController.m */,
 				63C5F41A18C9BCBB00F2C2FF /* ViewController.h */,
 				63ED99B518FB91800056E114 /* GameCenterManager.h */,
-				63ED99B618FB91800056E114 /* GameCenterManager.m */,
 				63C5F41D18C9BCBB00F2C2FF /* MyScene.h */,
+				63ED99B618FB91800056E114 /* GameCenterManager.m */,
 				63C5F41E18C9BCBB00F2C2FF /* MyScene.m */,
 				63D5FFB118F80EDC00176BBD /* slide1_balls.png */,
 				63C5F43F18C9BD9000F2C2FF /* Bird.h */,
 				63C5F44018C9BD9000F2C2FF /* Bird.m */,
+				63E8C8B31900095F00057979 /* Pamgaea.m4a */,
+				63E8C8AF1900084700057979 /* Pamgaea.mp3 */,
+				63E8C8B11900084B00057979 /* Monkeys Spinning Monkeys.mp3 */,
 				63D5FFC118FA2DD300176BBD /* EpicViewController.h */,
 				63D5FFC218FA2DD300176BBD /* EpicViewController.m */,
 				63C5F42018C9BCBB00F2C2FF /* Spaceship.png */,
@@ -508,6 +516,7 @@
 				4AF63C7618FA978300D3D9D3 /* ball_purple_s.png in Resources */,
 				4AF63C7418FA978300D3D9D3 /* ball_green_s.png in Resources */,
 				4AF63C8418FA978F00D3D9D3 /* ball_yellow.png in Resources */,
+				63E8C8B01900084700057979 /* Pamgaea.mp3 in Resources */,
 				4AF63C7F18FA978F00D3D9D3 /* ball_blue.png in Resources */,
 				4AED295418FBA92E003FECBF /* ambience.png in Resources */,
 				63D5FFC518FA3B2A00176BBD /* Resized-IARCY.png in Resources */,
@@ -516,6 +525,7 @@
 				4AF63C9B18FAA15F00D3D9D3 /* ball_bronze_s.png in Resources */,
 				63C5F41018C9BCBB00F2C2FF /* InfoPlist.strings in Resources */,
 				63C5F42318C9BCBB00F2C2FF /* Images.xcassets in Resources */,
+				63E8C8B21900084B00057979 /* Monkeys Spinning Monkeys.mp3 in Resources */,
 				4AED296A18FBA9B4003FECBF /* GRAPHITE.png in Resources */,
 				63C5F42118C9BCBB00F2C2FF /* Spaceship.png in Resources */,
 				4AF63C9118FAA13A00D3D9D3 /* ball_rock.png in Resources */,
