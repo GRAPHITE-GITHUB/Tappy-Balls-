@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A6D9A3E18FFF72300153345 /* ball_sack.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D9A3C18FFF72300153345 /* ball_sack.png */; };
+		4A6D9A3F18FFF72300153345 /* ball_pit.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6D9A3D18FFF72300153345 /* ball_pit.png */; };
 		4AED294F18FB9743003FECBF /* tappyballs.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED294E18FB9743003FECBF /* tappyballs.png */; };
 		4AED295418FBA92E003FECBF /* ambience.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295318FBA92E003FECBF /* ambience.png */; };
 		4AED295718FBA935003FECBF /* bottom_art.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AED295518FBA935003FECBF /* bottom_art.png */; };
@@ -97,6 +99,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A6D9A3C18FFF72300153345 /* ball_sack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_sack.png; sourceTree = "<group>"; };
+		4A6D9A3D18FFF72300153345 /* ball_pit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_pit.png; sourceTree = "<group>"; };
 		4AED294E18FB9743003FECBF /* tappyballs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tappyballs.png; sourceTree = "<group>"; };
 		4AED295318FBA92E003FECBF /* ambience.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ambience.png; sourceTree = "<group>"; };
 		4AED295518FBA935003FECBF /* bottom_art.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_art.png; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 		4AED295018FBA8DF003FECBF /* artwork */ = {
 			isa = PBXGroup;
 			children = (
+				4A6D9A3C18FFF72300153345 /* ball_sack.png */,
+				4A6D9A3D18FFF72300153345 /* ball_pit.png */,
 				4AED296718FBA967003FECBF /* bos-artwork.png */,
 				4AED295518FBA935003FECBF /* bottom_art.png */,
 				4AED295618FBA935003FECBF /* top_art.png */,
@@ -538,9 +544,11 @@
 				4AF63C7818FA978300D3D9D3 /* ball_yellow_s.png in Resources */,
 				4AED296618FBA95E003FECBF /* play_button.png in Resources */,
 				4AED296F18FBABDC003FECBF /* bos.png in Resources */,
+				4A6D9A3F18FFF72300153345 /* ball_pit.png in Resources */,
 				4AED295B18FBA944003FECBF /* nc_logo_credits.png in Resources */,
 				4AED295818FBA935003FECBF /* top_art.png in Resources */,
 				4AED295718FBA935003FECBF /* bottom_art.png in Resources */,
+				4A6D9A3E18FFF72300153345 /* ball_sack.png in Resources */,
 				63C5F44518C9C37000F2C2FF /* Plane 2.png in Resources */,
 				4AF63C8F18FAA13A00D3D9D3 /* ball_prize.png in Resources */,
 				4AF63C7518FA978300D3D9D3 /* ball_orange_s.png in Resources */,
