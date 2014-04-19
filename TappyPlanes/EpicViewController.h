@@ -23,8 +23,13 @@
     NSString* currentLeaderBoard;
     iCarousel *carousel;
     IBOutlet UILabel *ballTitle;
+    BOOL isPlatinumBallActive;
     
 }
+
+- (IBAction)purchase;
+- (IBAction)restore;
+- (IBAction)tapsAddPlatinumBallButton;
 
 @property (nonatomic,retain)IBOutlet UILabel *scoreLabel;
 @property (nonatomic,retain)IBOutlet UILabel *ballLabel;

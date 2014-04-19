@@ -8,6 +8,9 @@
 
 #import "EpicViewController.h"
 #import "AppSpecificValues.h"
+#import <StoreKit/StoreKit.h>
+
+#define kUnlockPlatinumBallProductIdentifier @"com.LECKERPTYLTD.TappyBalls.PlatinumBall"
 
 @interface EpicViewController () <UIActionSheetDelegate>
 @property (nonatomic, retain) NSArray *items;
@@ -197,7 +200,14 @@
         NSLog(@"Device does not support game centre");
         
     }
-
+    
+    isPlatinumBallActive = [[NSUserDefaults standardUserDefaults] boolForKey:@"isPlatinumBallActive"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    if(isPlatinumBallActive){
+        [self.view setBackgroundColor:[UIColor greenColor]];
+        //same code as in activatePlatinumBall
+    }
     
 //    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 12,
 //                                        scrollView.frame.size.height);
@@ -280,7 +290,93 @@
 
 }
 
+- (void)tapsActivatePlatinumBall{
+    NSLog(@"User requests to activate platinum ball");
+    
+    if([SKPaymentQueue canMakePayments]){
+        NSLog(@"User can make payments");
+        
+        SKProductsRequest *productsRequest = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithObject:kUnlockPlatinumBallProductIdentifier]];
+        productsRequest.delegate = self;
+        [productsRequest start];
+        
+    }
+    else{
+        NSLog(@"User cannot make payments due to parental controls");
+    }
+}
 
+- (void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response{
+    SKProduct *validProduct = nil;
+    int count = [response.products count];
+    if(count > 0){
+        validProduct = [response.products objectAtIndex:0];
+        NSLog(@"Products Available!");
+        [self purchase:validProduct];
+    }
+    else if(!validProduct){
+        NSLog(@"No products available");
+    }
+}
 
+- (IBAction)purchase:(SKProduct *)product{
+    SKPayment *payment = [SKPayment paymentWithProduct:product];
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+    [[SKPaymentQueue defaultQueue] addPayment:payment];
+}
+
+- (IBAction) restore{
+    [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
+}
+
+- (void) paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
+{
+    NSLog(@"received restored transactions: %i", queue.transactions.count);
+    for (SKPaymentTransaction *transaction in queue.transactions)
+    {
+        if(SKPaymentTransactionStateRestored){
+            NSLog(@"Transaction state -> Restored");
+            [self activatePlatinumBall];
+            [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+            break;
+        }
+        
+    }
+    
+}
+
+- (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray *)transactions{
+    for(SKPaymentTransaction *transaction in transactions){
+        switch (transaction.transactionState){
+            case SKPaymentTransactionStatePurchasing: NSLog(@"Transaction state -> Purchasing");
+                break;
+            case SKPaymentTransactionStatePurchased:
+                [self activatePlatinumBall];
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                NSLog(@"Transaction state -> Purchased");
+                break;
+            case SKPaymentTransactionStateRestored:
+                NSLog(@"Transaction state -> Restored");
+                [self activatePlatinumBall];
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                break;
+            case SKPaymentTransactionStateFailed:
+                if(transaction.error.code != SKErrorPaymentCancelled){
+                    NSLog(@"Transaction state -> Cancelled");
+                }
+                [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
+                break;
+        }
+    }
+}
+
+- (void)activatePlatinumBall{
+    //add code for activating the platinum ball here and in viewDidLoad (see comments)
+    [self.view setBackgroundColor:[UIColor greenColor]];
+    isPlatinumBallActive = YES;
+    
+    [[NSUserDefaults standardUserDefaults] setBool:isPlatinumBallActive forKey:@"isPlatinumBallActive"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 @end
