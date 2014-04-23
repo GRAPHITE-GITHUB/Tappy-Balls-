@@ -50,6 +50,7 @@
 		4AF63CA018FAA15F00D3D9D3 /* ball_rainbow_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */; };
 		4AF63CA118FAA15F00D3D9D3 /* ball_rock_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */; };
 		4AF63CA218FAA15F00D3D9D3 /* ball_silver_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */; };
+		63030DCC1907E85E0069F959 /* ContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63030DCA1907E85E0069F959 /* ContainerScrollView.m */; };
 		638DC72918FCB30E00BA9034 /* images (16).jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 638DC72818FCB30E00BA9034 /* images (16).jpeg */; };
 		638DC72B18FCB35700BA9034 /* game centre.png in Resources */ = {isa = PBXBuildFile; fileRef = 638DC72A18FCB35700BA9034 /* game centre.png */; };
 		63C5F40418C9BCBB00F2C2FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C5F40318C9BCBB00F2C2FF /* Foundation.framework */; };
@@ -150,6 +151,8 @@
 		4AF63C9818FAA15F00D3D9D3 /* ball_rainbow_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rainbow_s.png; sourceTree = "<group>"; };
 		4AF63C9918FAA15F00D3D9D3 /* ball_rock_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_rock_s.png; sourceTree = "<group>"; };
 		4AF63C9A18FAA15F00D3D9D3 /* ball_silver_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_silver_s.png; sourceTree = "<group>"; };
+		63030DCA1907E85E0069F959 /* ContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerScrollView.m; sourceTree = "<group>"; };
+		63030DCB1907E85E0069F959 /* ContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerScrollView.h; sourceTree = "<group>"; };
 		638DC72818FCB30E00BA9034 /* images (16).jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "images (16).jpeg"; sourceTree = "<group>"; };
 		638DC72A18FCB35700BA9034 /* game centre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "game centre.png"; sourceTree = "<group>"; };
 		63C5F40018C9BCBB00F2C2FF /* TappyBalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappyBalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +362,8 @@
 				63C5F41718C9BCBB00F2C2FF /* Main.storyboard */,
 				63CE7EDE18FFF100003FBE56 /* iCarousel.h */,
 				63CE7EDC18FFF0F7003FBE56 /* iCarousel.m */,
+				63030DCA1907E85E0069F959 /* ContainerScrollView.m */,
+				63030DCB1907E85E0069F959 /* ContainerScrollView.h */,
 				63ED99B818FB91E20056E114 /* AppSpecificValues.h */,
 				63C5F41B18C9BCBB00F2C2FF /* ViewController.m */,
 				63C5F41A18C9BCBB00F2C2FF /* ViewController.h */,
@@ -598,6 +603,7 @@
 				63C5F41C18C9BCBB00F2C2FF /* ViewController.m in Sources */,
 				63CE7EDD18FFF0F7003FBE56 /* iCarousel.m in Sources */,
 				63C5F41618C9BCBB00F2C2FF /* AppDelegate.m in Sources */,
+				63030DCC1907E85E0069F959 /* ContainerScrollView.m in Sources */,
 				63C5F41218C9BCBB00F2C2FF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

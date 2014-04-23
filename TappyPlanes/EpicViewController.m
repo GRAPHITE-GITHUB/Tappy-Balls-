@@ -11,6 +11,7 @@
 #import <AVFoundation/AVAudioPlayer.h>
 #import <AudioToolbox/AudioToolbox.h>
 
+
 @interface EpicViewController () <UIActionSheetDelegate>
 @property (nonatomic, retain) NSArray *items;
 @end
@@ -24,159 +25,73 @@
 @synthesize ballLabel;
 @synthesize items;
 
-- (void)loadView {
+
     
-	[super loadView];
-	
-	self.view.backgroundColor = [UIColor blueColor];
 	
 	
-	items = [NSArray arrayWithObjects:
+	
+	
+
+
+
+
+
+
+
+-(void)viewDidLoad {
+    
+    
+	self.items = [NSArray arrayWithObjects:
              
              [UIImage imageNamed:@"ball_red.png"],
-              [UIImage imageNamed:@"ball_blue.png"],
+             [UIImage imageNamed:@"ball_blue.png"],
              [UIImage imageNamed:@"ball_green.png"],
              [UIImage imageNamed:@"ball_yellow.png"],
              [UIImage imageNamed:@"ball_orange.png"],
              [UIImage imageNamed:@"ball_purple.png"],
 			 [UIImage imageNamed:@"ball_bronze.png"],
              [UIImage imageNamed:@"ball_silver.png"],
-              [UIImage imageNamed:@"ball_gold.png"],
+             [UIImage imageNamed:@"ball_gold.png"],
 			 [UIImage imageNamed:@"ball_crystal.png"],
              [UIImage imageNamed:@"ball_prize.png"],
              [UIImage imageNamed:@"ball_rainbow.png"],
              [UIImage imageNamed:@"ball_rock.png"],
              [UIImage imageNamed:@"ball_platinum.png"],
 			 nil];
-	
-	
-	carousel = [[iCarousel alloc] initWithFrame:self.view.bounds];
-	carousel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    carousel.type = iCarouselTypeLinear;
-	carousel.dataSource = self;
-	carousel.delegate = self;
-	[self.view addSubview:carousel];
     
-   
-}
+    NSInteger totalPhotos = self.items.count;
+    NSInteger gapDistance  = 224;
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    
+    if (screenSize.height > 480) {
+        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(185, -55, 300, 201)];
+    } else {
+        gapDistance = 240;
+        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(155, -35, 240, 201)];
+    }
+    
+    self.scrollView.pagingEnabled = YES;
+    self.scrollView.clipsToBounds = NO;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.delegate = self;
+    
+    
+    for (NSInteger counter = 0; counter < totalPhotos; counter++) {
+        NSInteger gap = counter * gapDistance;
+        UIImage * image = self.items[counter];
+        UIImageView * imageView = [[UIImageView alloc] initWithImage:image];
+        UIButton * button = [[UIButton alloc] initWithFrame:CGRectMake(self.scrollView.frame.size.height / 2 - imageView.frame.size.height / 2 + gap , self.scrollView.frame.size.width / 2 - imageView.frame.size.width / 2, imageView.frame.size.width, imageView.frame.size.height)];
+        button.tag = counter;
+        [button setImage:image forState:UIControlStateNormal];
+        [button addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
+        [self.scrollView addSubview:button];
+        
+    }
+    self.scrollView.contentSize = CGSizeMake(1510, 100);
+    self.containerScrollView.scrollView = self.scrollView;
+    
 
 
-#pragma mark -
-#pragma mark iCarousel datasource methods
-
-- (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
-{
-    return [items count];
-}
-
-- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
-{
- 	UIImage *image = [items objectAtIndex:index];
-	UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, image.size.width, image.size.height)] ;
-	[button setBackgroundImage:image forState:UIControlStateNormal];
-	[button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-	button.titleLabel.font = [button.titleLabel.font fontWithSize:50];
-	button.tag=index;
-	return button;
-	
-}
-
-#pragma mark -
-#pragma mark iCarousel delegate methods
-
-- (void)carousel: (iCarousel *)_carousel didSelectItemAtIndex:(NSInteger)index
-{
-    
-    NSLog(@"Did select item at index %d",index);
-    
-    if(index==0) {
-        
-        ballLabel.text=@"Red Ball";
-        descriptionLabel.text=@"The classic Tappy Balls ball.";
-    }
-    
-    if(index==1) {
-        
-        ballLabel.text=@"Blue Ball";
-        descriptionLabel.text=@"The finest ball so far.";
-    }
-    
-    if(index==2) {
-        
-        ballLabel.text=@"Green Ball";
-        descriptionLabel.text=@"The best ball yet.";
-    }
-    
-    if(index==3) {
-        
-        ballLabel.text=@"Yellow Ball";
-        descriptionLabel.text=@"The brightest ball thus far.";
-    }
-    if(index==4) {
-        
-        ballLabel.text=@"Orange Ball";
-        descriptionLabel.text=@"The fruitiest ball of the bunch.";
-    }
-    
-    if(index==5) {
-        
-        ballLabel.text=@"Purple Ball";
-        descriptionLabel.text=@"The prettiest ball so far.";
-    }
-    
-    if(index==6) {
-        
-        ballLabel.text=@"Bronze Ball";
-        descriptionLabel.text=@"Now we are getting serious.";
-    }
-    if(index==7) {
-        
-        ballLabel.text=@"Silver Ball";
-        descriptionLabel.text=@"The Tappy Ball addict's ball of choice.";
-    }
-    
-    if(index==8) {
-    
-        ballLabel.text=@"Gold Ball";
-        descriptionLabel.text=@"Malleable and ready to mingle!";
-    }
-    
-    if(index==9) {
-        
-        ballLabel.text=@"Crystal Ball";
-        descriptionLabel.text=@"See into the future. $0.99.";
-    }
-
-    if(index==10) {
-        
-        ballLabel.text=@"No-ball Prize";
-        descriptionLabel.text=@"Unleash your inner scientist. $0.99.";
-    }
-    
-    if(index==11) {
-        
-        ballLabel.text=@"Rainbow Ball";
-        descriptionLabel.text=@"Unlock balls via your score. $2.99.";
-    }
-    
-    if(index==12) {
-        
-        ballLabel.text=@"Rock";
-        descriptionLabel.text=@"Let's Rock and Roll. $0.99.";
-    }
-    if(index==13) {
-        
-        ballLabel.text=@"Game Centre";
-        descriptionLabel.text=@"For the competitive.";
-    }
-    
-    
-}
-
-
-
-
--(void)viewDidLoad {
    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     

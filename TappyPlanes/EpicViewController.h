@@ -13,10 +13,11 @@
 #import "iCarousel.h"
 #import <AVFoundation/AVAudioPlayer.h>
 #import <AudioToolbox/AudioToolbox.h>
+#import "ContainerScrollView.h"
 
 @class GameCenterManager;
 
-@interface EpicViewController : UIViewController <iCarouselDataSource ,iCarouselDelegate> {
+@interface EpicViewController : UIViewController <iCarouselDataSource ,iCarouselDelegate, UIScrollViewDelegate> {
     
     SystemSoundID PlaySoundID;
     
@@ -37,5 +38,7 @@
 @property (nonatomic,retain) IBOutlet UILabel *ballTitle;
 @property (nonatomic, retain) GameCenterManager *gameCenterManager;
 - (IBAction) showLeaderboard;
+@property (nonatomic, strong) UIScrollView * scrollView;
+@property (nonatomic, weak) IBOutlet ContainerScrollView * containerScrollView;
 
 @end

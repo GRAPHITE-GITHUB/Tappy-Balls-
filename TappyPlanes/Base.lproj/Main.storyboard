@@ -60,12 +60,17 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bhV-vb-oFl" customClass="ContainerScrollView">
+                                <rect key="frame" x="0.0" y="181" width="320" height="174"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.098058994319999995" green="0.19131594800000001" blue="0.83518016579999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="ballLabel" destination="osy-tL-qW1" id="7nM-br-KxN"/>
+                        <outlet property="containerScrollView" destination="bhV-vb-oFl" id="OhD-wa-Awg"/>
                         <outlet property="descriptionLabel" destination="P06-cV-Y2k" id="pSq-89-gSK"/>
                         <outlet property="scoreLabel" destination="oGH-Es-neE" id="IHk-eI-85c"/>
                     </connections>
