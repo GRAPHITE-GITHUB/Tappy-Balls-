@@ -51,7 +51,8 @@
 - (void) runTimer;
 - (void) runTimer2;
 - (void) runTimer3;
-
+@property (nonatomic, retain)IBOutlet UIView *mysubview;
+@property (nonatomic, retain)IBOutlet UIView *mysubview2;
 - (IBAction) showLeaderboard;
 
 

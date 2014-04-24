@@ -10,6 +10,7 @@
 #import "MyScene.h"
 #import <AVFoundation/AVAudioPlayer.h>
 #import "EpicViewController.h"
+#import "Bezier.h"
 #import "AppSpecificValues.h"
 
 @implementation ViewController
@@ -22,6 +23,8 @@
 @synthesize gameOver;
  @synthesize gameCenterManager;
 @synthesize currentLeaderBoard;
+@synthesize mysubview;
+@synthesize mysubview2;
 
 - (void)viewDidLoad
 {
@@ -66,7 +69,12 @@
     
     label2.text= score;
     
+    CGRect subviewRect = CGRectMake(0, 0, 1640, 900);
+    mysubview = [[Bezier alloc] initWithFrame:subviewRect];
+    [mysubview setBackgroundColor:[UIColor clearColor]];
+    [self.view addSubview:mysubview];
     
+  
    
     SKView * skView = (SKView *)self.view;
     skView.showsFPS = NO;
@@ -116,6 +124,9 @@
     if([menu isEqual:@"GAME"]){
        
         [gameOver setHidden:NO];
+        [mysubview setHidden:YES];
+       
+        
       
         NSString *score =label2.text;
         
@@ -158,6 +169,7 @@
     [defaults synchronize];
     
     [gameOver setHidden:YES];
+    [mysubview setHidden:NO];
     
     NSLog(@"Data saved");
 
@@ -187,7 +199,27 @@
 
 
 
-
+- (void)drawRect:(CGRect)rect
+{
+    
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context,
+                                     [UIColor blackColor].CGColor);
+    CGContextMoveToPoint(context, 0, 150);
+    CGContextAddCurveToPoint(context, 100, 170, 200, 190, 350, 180 );
+    CGContextStrokePath(context);
+    
+    
+    CGContextSetLineWidth(context, 2.0);
+    CGContextSetStrokeColorWithColor(context,
+                                     [UIColor blackColor].CGColor);
+    CGContextMoveToPoint(context, 0, 450);
+    CGContextAddCurveToPoint(context, 100, 420, 200, 400, 350, 430 );
+    CGContextStrokePath(context);
+    
+    
+}
 
 - (BOOL)shouldAutorotate
 {

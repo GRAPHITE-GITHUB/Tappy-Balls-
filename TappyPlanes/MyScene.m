@@ -10,6 +10,8 @@
 #import "Bird.h"
 #import <AVFoundation/AVAudioPlayer.h>
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "Bezier.h"
 
 #define kObstacleWidth          55.
 #define kObstacleVertSpace      106.
@@ -31,6 +33,8 @@
 @synthesize label2;
 @synthesize currentScore;
 @synthesize totalScore;
+@synthesize mysubview;
+
 
 -(void)viewDidLoad {
     
@@ -39,6 +43,13 @@
 	theAudio.delegate = self;
 	[theAudio play];
     theAudio.numberOfLoops = 0.1;
+    
+    
+        CGRect subviewRect = CGRectMake(0, 0, 320, 320);
+        mysubview = [[Bezier alloc] initWithFrame:subviewRect];
+        [mysubview setBackgroundColor:[UIColor whiteColor]];
+        [self.view addSubview:mysubview];
+    
     
 }
 -(id)initWithSize:(CGSize)size {
@@ -61,12 +72,12 @@
             self.bird = [Bird spriteNodeWithImageNamed:@"Resized-IARCY.png"];
         }else {
         
-        self.bird = [Bird spriteNodeWithImageNamed:@"ball_blue.png"];
+        self.bird = [Bird spriteNodeWithImageNamed:@"ball_blue_2.png"];
             
         }
         self.bird.physicsBody = [SKPhysicsBody bodyWithCircleOfRadius:self.bird.size.width/2];
         self.bird.physicsBody.dynamic = NO;
-        self.bird.physicsBody.density = 3.2;
+        self.bird.physicsBody.density = 0.7;
         self.bird.physicsBody.linearDamping = 1.;
         self.bird.position = CGPointMake(160, 300);
         [self addChild:self.bird];

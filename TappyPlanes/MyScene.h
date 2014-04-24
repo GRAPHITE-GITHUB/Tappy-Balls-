@@ -12,6 +12,7 @@
     
     IBOutlet UILabel *label1;
     IBOutlet UILabel *label2;
+    
     int64_t currentScore;
     int64_t totalScore;
 }
@@ -20,5 +21,5 @@
 @property (nonatomic, assign) int64_t totalScore;
 @property (nonatomic, retain)IBOutlet UILabel *label1;
 @property (nonatomic, retain)IBOutlet UILabel *label2;
-
+@property (nonatomic, retain)IBOutlet UIView *mysubview;
 @end
