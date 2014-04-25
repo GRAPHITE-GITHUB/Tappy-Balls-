@@ -10,7 +10,7 @@
 #import "AppSpecificValues.h"
 #import <AVFoundation/AVAudioPlayer.h>
 #import <AudioToolbox/AudioToolbox.h>
-
+#import <Twitter/Twitter.h>
 
 @interface EpicViewController () <UIActionSheetDelegate>
 @property (nonatomic, retain) NSArray *items;
@@ -26,48 +26,54 @@
 @synthesize items;
 
 
-    
-	
-	
-	
-	
-
-
-
-
-
-
-
 -(void)viewDidLoad {
     
+    myTimer = [NSTimer scheduledTimerWithTimeInterval:0.3 target:self selector:@selector (showData)userInfo: nil
+                                              repeats: YES];
     
 	self.items = [NSArray arrayWithObjects:
              
-             [UIImage imageNamed:@"ball_red.png"],
-             [UIImage imageNamed:@"ball_blue.png"],
-             [UIImage imageNamed:@"ball_green.png"],
-             [UIImage imageNamed:@"ball_yellow.png"],
-             [UIImage imageNamed:@"ball_orange.png"],
-             [UIImage imageNamed:@"ball_purple.png"],
-			 [UIImage imageNamed:@"ball_bronze.png"],
-             [UIImage imageNamed:@"ball_silver.png"],
-             [UIImage imageNamed:@"ball_gold.png"],
-			 [UIImage imageNamed:@"ball_crystal.png"],
-             [UIImage imageNamed:@"ball_prize.png"],
-             [UIImage imageNamed:@"ball_rainbow.png"],
-             [UIImage imageNamed:@"ball_rock.png"],
-             [UIImage imageNamed:@"ball_platinum.png"],
+            
+             [UIImage imageNamed:@"ball_blue_2.png"],
+            [UIImage imageNamed:@"ball_red_2.png"],
+             [UIImage imageNamed:@"ball_green_2.png"],
+             [UIImage imageNamed:@"ball_yellow_2.png"],
+             [UIImage imageNamed:@"ball_orange_2.png"],
+             [UIImage imageNamed:@"ball_purple_2.png"],
+			 [UIImage imageNamed:@"ball_bronze_2.png"],
+             [UIImage imageNamed:@"ball_silver_2.png"],
+             [UIImage imageNamed:@"ball_gold_2.png"],
+			 [UIImage imageNamed:@"ball_crystal_2.png"],
+             [UIImage imageNamed:@"ball_prize_2.png"],
+             [UIImage imageNamed:@"ball_rainbow_2.png"],
+             [UIImage imageNamed:@"ball_rock_2.png"],
+             [UIImage imageNamed:@"ball_platinum_2.png"],
 			 nil];
     
+    self.ballNames = @[@"Blue Ball",
+                    @"Red Ball",
+                    @"Green Ball",
+                    @"Yellow Ball",
+                    @"Orange Ball",
+                        @"Purple Ball",
+                        @"Bronze Ball",
+                        @"Silver Ball",
+                        @"Gold Ball",
+                        @"Crystal Ball",
+                        @"The No-Ball Prize",
+                       @"The Rainbow Ball",
+                       @"The Rock",
+                       @"Platinum Ball",];
+    
     NSInteger totalPhotos = self.items.count;
-    NSInteger gapDistance  = 224;
+    NSInteger gapDistance  = 320;
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
     
     if (screenSize.height > 480) {
-        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(185, -55, 300, 201)];
+        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(75, -70, 320, 174)];
     } else {
-        gapDistance = 240;
-        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(155, -35, 240, 201)];
+        gapDistance = 320;
+        self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(75, -70, 320, 174)];
     }
     
     self.scrollView.pagingEnabled = YES;
@@ -84,10 +90,11 @@
         button.tag = counter;
         [button setImage:image forState:UIControlStateNormal];
         [button addTarget:self action:@selector(sendMessage:) forControlEvents:UIControlEventTouchUpInside];
+        
         [self.scrollView addSubview:button];
         
     }
-    self.scrollView.contentSize = CGSizeMake(1510, 100);
+    self.scrollView.contentSize = CGSizeMake(4510, 100);
     self.containerScrollView.scrollView = self.scrollView;
     
 
@@ -121,7 +128,8 @@
         NSLog(@"Device does not support game centre");
         
     }
-
+    
+   
     
 //    scrollView.contentSize = CGSizeMake(scrollView.frame.size.width * 12,
 //                                        scrollView.frame.size.height);
@@ -155,6 +163,15 @@
 //        i++;
 //    }
 }
+-(void) sendMessage: (UIButton *) sender
+{
+    SLComposeViewController * tweetSheet = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    [tweetSheet setInitialText:self.ballNames[sender.tag]];
+    [self presentViewController:tweetSheet animated:YES completion:nil];
+}
+
+
+
 
 -(IBAction)blueBall {
     
@@ -183,6 +200,15 @@
        [alert show];
     }
     
+}
+
+
+
+-(void)showData {
+    
+    
+    
+   
 }
 
 - (IBAction) showLeaderboard

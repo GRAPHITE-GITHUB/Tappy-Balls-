@@ -28,6 +28,7 @@
     NSString* currentLeaderBoard;
     iCarousel *carousel;
     IBOutlet UILabel *ballTitle;
+    NSTimer *myTimer;
     
 }
 
@@ -38,7 +39,9 @@
 @property (nonatomic,retain) IBOutlet UILabel *ballTitle;
 @property (nonatomic, retain) GameCenterManager *gameCenterManager;
 - (IBAction) showLeaderboard;
+- (void) runTimer;
 @property (nonatomic, strong) UIScrollView * scrollView;
 @property (nonatomic, weak) IBOutlet ContainerScrollView * containerScrollView;
+@property (nonatomic, strong) NSArray * ballNames;
 
 @end
